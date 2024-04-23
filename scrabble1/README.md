@@ -1,7 +1,7 @@
 # Scrabble Word Score Calculator #
 Calculate the score of a word on the Scrabble board. Users will provide a word and a location. The program should output the score.
 
-![https://nypost.com/wp-content/uploads/sites/2/2022/11/scrabble-featured.jpg?quality=75&strip=all](scrabble.jpg)
+![Picture of Scrabble Board from Engineering Lab](scrabble.jpg)
 
 ## Constraints ##
 The code should be implemented as a publically available function. Wrap the function in a small program that allows users to query the function from the command line.
