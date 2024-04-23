@@ -1,4 +1,4 @@
-# Scrabble Word Score #
+# Scrabble Word Score Calculator #
 Calculate the score of a word on the Scrabble board. Users will provide a word and a location. The program should output the score.
 
 ![https://nypost.com/wp-content/uploads/sites/2/2022/11/scrabble-featured.jpg?quality=75&strip=all](scrabble.jpg)
@@ -20,3 +20,7 @@ Here are four sample runs that show two valid words (one with a wildcard) and tw
 * Valid word: $Ze\\_ra:7,8,D \rightarrow (10 + 2 \cdot 1 + 0 + 1 + 1) = 14$
 * Invalid word: $Zabre:2,3,D \rightarrow -1$
 * Out of bounds: $Zebra:14,3,A \rightarrow -1$
+
+## Resources ##
+The Scrabble Word Score Calculator will need a list of approved words that it can use to verify user input. The official Scrabble dictionary is available to members of the North American Scrabble Players Association (NASPA) as a text file; however, it is not released to the public. Therefore, this project will use a publically available dictionary obtained from DWYL's github repository. DWYL posted a text file containing 479k "English words" based on a file from Info Chimps.
+* [words_alpha.txt](words_alpha.txt)
