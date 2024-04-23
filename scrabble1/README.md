@@ -22,5 +22,5 @@ Here are four sample runs that show two valid words (one with a wildcard) and tw
 * Out of bounds: $Zebra:14,3,A \rightarrow -1$
 
 ## Resources ##
-The Scrabble Word Score Calculator will need a list of approved words that it can use to verify user input. The official Scrabble dictionary is available to members of the North American Scrabble Players Association (NASPA) as a text file; however, it is not released to the public. Therefore, this project will use a publically available dictionary obtained from DWYL's github repository. DWYL posted a text file containing 479k "English words" based on a file from Info Chimps.
+The Scrabble Word Score Calculator will need a list of approved words that it can use to verify user input. The official Scrabble dictionary is available to members of the North American Scrabble Players Association (NASPA) as a text file; however, it is not released to the public. Therefore, this project will use a publically available dictionary obtained from DWYL's github repository. DWYL posted a text file containing 479k English words based on a file from Info Chimps. **Warning:** there are "words" in this file that are obviously not real words... but it's a reasonable dictionary in the public domain.
 * [words_alpha.txt](words_alpha.txt)
