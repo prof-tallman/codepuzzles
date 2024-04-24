@@ -13,10 +13,10 @@ The code should be implemented as a publicly available function. Wrap the functi
 
 ## Examples ##
 Here are three sample runs that show all of the possible valid words.
-* Input: `__rn__in_` Output: `['carnitine', 'carnosine', 'cornering', 'cornicing', 'cornutine', 'cornuting', 'furnacing', 'garnering', 'hgrnotine', 'hornotine', 'kerneling', 'surnaming', 'turnicine']
+* Input: `__rn__in_` Output: `['carnitine', 'carnosine', 'cornering', 'cornicing', 'cornutine', 'cornuting', 'furnacing', 'garnering', 'hgrnotine', 'hornotine', 'kerneling', 'surnaming', 'turnicine']`
 * Input: `_q_z_` Output: `[]`
 * Input: `abc____` Output: `['abcissa']`
-* Input: `puz___` Output: `[puzzle]` (the word "puzzle" requires two Zs but the game only includes 1 'Z' tile... however, the wildcard tile can cover the second 'Z')
+* Input: `puz___` Output: `['puzzle']` (the word "puzzle" requires two Zs but the game only includes 1 'Z' tile... however, the wildcard tile can cover the second 'Z')
 
 ## Resources ##
 The Scrabble Word Score Calculator will need a list of approved words to verify user input. The official Scrabble dictionary is available to members of the North American Scrabble Players Association (NASPA) as a text file; however, it is not released to the public. Therefore, this project will use a publically available dictionary obtained from DWYL's github repository. DWYL posted a text file containing 479k English words based on a file from Info Chimps. **Warning:** there are "words" in this file that are obviously not real words... but it's a reasonable dictionary in the public domain.
