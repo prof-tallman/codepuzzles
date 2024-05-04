@@ -16,10 +16,10 @@ The code should be implemented as a publically available function. Wrap the func
 
 ## Examples ##
 Here are four sample runs that show two valid words (one with a wildcard) and two invalid words.
-* Valid word: $Zebra:1,2,A \rightarrow 2 \cdot (10 + 1 + 3 + 1 + 1) = 32$
-* Valid word: $Ze\\_ra:7,8,D \rightarrow (10 + 2 \cdot 1 + 0 + 1 + 1) = 14$
-* Invalid word: $Zabre:2,3,D \rightarrow -1$
-* Out of bounds: $Zebra:14,3,A \rightarrow -1$
+* Valid word: $Zebra:1,2,A \rightarrow 2 \cdot (10 + 1 + 3 + 1 + 1) = 32$ <br>Explanation: at (1,2) Across the word `zebra` crosses a double word score
+* Valid word: $Ze\\_ra:7,8,D \rightarrow (10 + 2 \cdot 1 + 0 + 1 + 1) = 14$ <br>Explanation: at (7,8) Down the `e` crosses a double letter score and the `b` is a 0-point wildcard tile
+* Invalid word: $Zabre:2,3,D \rightarrow -1$ <br>Explanation: the word is invalid and recieves a score of -1
+* Out of bounds: $Zebra:14,3,A \rightarrow -1$ <br>Explanation: at (14,3) Across the word extends off the board
 
 ## Resources ##
 The Scrabble Word Score Calculator will need a list of approved words that it can use to verify user input. The official Scrabble dictionary is available to members of the North American Scrabble Players Association (NASPA) as a text file; however, it is not released to the public. Therefore, this project will use a publically available dictionary obtained from DWYL's github repository. DWYL posted a text file containing 479k English words based on a file from Info Chimps. **Warning:** there are "words" in this file that are obviously not real words... but it's a reasonable dictionary in the public domain.
