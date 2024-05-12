@@ -9,10 +9,11 @@ Decryption is the similar to encryption except that the alphabet is shifted in t
 
 ## Stages ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
-1. [AI Does My HW] Write a function that encrypts a text string by shifting each letter by a fixed amount. Return the encrypted string. Call this function with a hardcoded sample text and key. Compare the function's output to a precomputed that is known to be correct. For example, `hello` shifted by 5 would produce `mjqqt`. Do not inclue any spaces, punctuation, or numbers in the sample text--letters only.
-2. [Script Kiddie] Add a decryption function that performs the inverse cipher operation. This can be accomplished quickly with just a few lines of code. Test the decryption function with the output of the encryption, it should return the original harcoded sample text.
-3. [Professional] Change the program to use command line parameters instead of the hardcoded sample text. The program will need three parameters: the text to encrypt/decrypt, a key (the shift amount), and a flag to choose between encryption and decryption.
-4. [1337 H@cker] Modify the encryption and decryption functions to process spaces, punctuation, and numbers. The program should work in two modes: `simple` mode will include all non-alphabetic characters without changing them and `secure` mode will convert the text to uppercase and remove all spaces, punctuations, and numbers.
+1. ***AI Does My HW***: Write a function that encrypts a text string by shifting each letter by a fixed amount. Return the encrypted string. Call this function with a hardcoded sample text and key. Compare the function's output to a precomputed that is known to be correct. For example, `hello` shifted by 5 would produce `mjqqt`. Do not inclue any spaces, punctuation, or numbers in the sample text--letters only.
+2. ***Script Kiddie***: Add a decryption function that performs the inverse cipher operation. This can be accomplished quickly with just a few lines of code. Test the decryption function with the output of the encryption, it should return the original harcoded sample text.
+3. ***Professional***: Change the program to use command line parameters instead of the hardcoded sample text. The program will need three parameters: the text to encrypt/decrypt, a key (the shift amount), and a flag to choose between encryption and decryption.
+4. ***1337 H@cker***: Modify the encryption and decryption functions to process spaces, punctuation, and numbers. The program should work in two modes: `simple` mode will include all non-alphabetic characters without changing them and `secure` mode will convert the text to uppercase and remove all spaces, punctuations, and numbers.
+5. ***BONUS***: Add a brute force option that will demonstrate the weakness of the Caesar Shift Cipher by printing the message using every possible shift value, 1-25.
 
 ## Constraints ##
 Additional assumptions and constraints are listed below.
