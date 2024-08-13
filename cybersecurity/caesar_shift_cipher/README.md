@@ -1,7 +1,7 @@
 # Caesar Shift Cipher #
 Write a program that encrypts and decrypts text messages using the Caesar Shift Cipher.
 
-The Caeasar Shift Cipher is a historic cipher credited to the Roman military. It is considered one of the weaker ciphers to break since there are only 25 possible shift values (e.g., keys). However, the cipher has been used to encrypt military communications all the way up to the American Civil War.
+The Caesar Shift Cipher is a historic cipher credited to the Roman military. It is considered one of the weaker ciphers to break since there are only 25 possible shift values (e.g., keys). However, the cipher has been used to encrypt military communications all the way up to the American Civil War.
 
 The cipher works by rotating the entire alphabet forward so that each letter is shifted by the same amount. Plaintext letters at the end of the alphabet are wrapped around to ciphertext letters at the beginning of the alphabet. For example, if the shift amount is 5, then letter $A \rightarrow F$, $B \rightarrow G$, $C \rightarrow H$, $X \rightarrow C$, $Y \rightarrow D$, and $Z \rightarrow E$.
 

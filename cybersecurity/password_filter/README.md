@@ -1,9 +1,9 @@
 # Password Complexity Checker #
 Determine if a passphrase fulfills a set of complexity requirements.
 
-Passwords are used to authenticate a person based on some secret information that they have memorized. But any adversary that can guess somebody's password can gain access to the protected resource. So it is important to choose a password that cannot be easily guessed. To help with this, many programs require a certain level of password complexity. Passwords that do not meet the complexity requireements are not allowed.
+Passwords are used to authenticate a person based on some secret information that they have memorized. But any adversary that can guess somebody's password can gain access to the protected resource. So it is important to choose a password that cannot be easily guessed. To help with this, many programs require a certain level of password complexity. Passwords that do not meet the complexity requirements are not allowed.
 
-Note: This program is a fun challenge but does not adequetly protect the user's input. Do not type in a password for your bank account or some other important resource.
+Note: This program is a fun challenge but does not adequatly protect the user's input. Do not type in a password for your bank account or some other important resource.
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
