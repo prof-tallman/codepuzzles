@@ -10,8 +10,8 @@ Decryption is the similar to encryption except that the alphabet is shifted in t
 ## Stages ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
 1. ***AI Does My HW***: Write a function that encrypts a text string by shifting each letter by a fixed amount. Return the encrypted string. Call this function with a hardcoded sample text and key. Compare the function's output to a precomputed test case that is known to be correct. For example, `hello` shifted by 5 would produce `mjqqt`. Do not inclue any spaces, punctuation, or numbers in the sample text--letters only.
-2. ***Script Kiddie***: Add a decryption function that performs the inverse cipher operation. This can be accomplished quickly with just a few lines of code. Test the decryption function with the output of the encryption, it should return the original harcoded sample text.
-3. ***Professional***: Change the program to use command line parameters instead of the hardcoded sample text. The program will need three parameters: the text to encrypt/decrypt, a key (the shift amount), and a flag to choose between encryption and decryption. Detect common errors and handle them gracefully.
+2. ***Script Kiddie***: Add a decryption function that performs the inverse cipher operation. This can be accomplished quickly with just a few lines of code. Test the decryption function with the output of the encryption, it should return the original harcoded sample text. Do not include any spaces, punctuation, or numbers in the sample text--letters only.
+3. ***Professional***: Change the program to use command line parameters instead of the hardcoded sample text. The program will need three parameters: the text to encrypt/decrypt, a key (the shift amount), and a flag to choose between encryption and decryption. Detect common errors and handle them gracefully. For example, what happens if the user passes in text that contains spaces or numbers?
 4. ***1337 H@cker***: Modify the encryption and decryption functions to process spaces, punctuation, and numbers. The program should work in two modes: `simple` mode will include all non-alphabetic characters without changing them and `secure` mode will convert the text to uppercase and remove all spaces, punctuations, and numbers. Add another flag to the command line parameters that will choose between the two modes. 
 5. ***BONUS***: Add a brute force option that will demonstrate the weakness of the Caesar Shift Cipher by printing the message using every possible shift value, 1-25.
 
@@ -23,6 +23,7 @@ However, students are prohibited from giving the AI with any information about t
 ## Constraints ##
 Additional assumptions and constraints are listed below.
 * Although this cipher can be used for any alphabet-based language, it is reasonable to restrict your code to a single language such as English.
+* Assume that the user will enter mixed-case text. That is, it might include lower-case and upper-case letters.
 
 ## Examples ##
 Here are a few sample runs for the final program.
