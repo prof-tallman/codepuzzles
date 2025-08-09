@@ -11,6 +11,11 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 4. ***1337 H@cker***: Modify the command line to take two arguments, $m$ and $n$. Find all of the prime numbers between $m$ and $n$ and randomly print one of them. If there are no primes, print the largest prime that is less than $m$
 5. ***BONUS***: Replace the code for the Sieve of Eratosthenes with the faster Sieve of Atkin.
 
+## AI Restrictions ##
+Students are allowed to use AI LLMs such as ChatGPT to lookup basic features and examples of the programming language. For example, a student might ask AI for the modulus operator in a certain language. For most languages, the AI should respond that the modules operator is the percent sign (`%`) and can be used as shown: `modulus = number % divisor`.
+
+However, students are prohibited from giving the AI with any information about the project. If the AI guesses the context of the assignment and provides sample code, please try to ignore this information. Basically, studnets may use AI as a nice interface to the official documentation but may not use AI to write any of the project.
+
 ## Constraints ##
 None.
 

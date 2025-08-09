@@ -15,6 +15,11 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 4. ***1337 H@cker***: Modify the encryption and decryption functions to process spaces, punctuation, and numbers. The program should work in two modes: `simple` mode will include all non-alphabetic characters without changing them and `secure` mode will convert the text to uppercase and remove all spaces, punctuations, and numbers.
 5. ***BONUS***: Add a brute force option that will demonstrate the weakness of the Caesar Shift Cipher by printing the message using every possible shift value, 1-25.
 
+## AI Restrictions ##
+Students are allowed to use AI LLMs such as ChatGPT to lookup basic features and examples within the programming language. For example, somebody might ask AI how to convert a letter to a number (in Python it would be the built-in `ord` function, or you could use a lookup string like `alphabet = 'abcdefghijklmnopqrstuvwxyz'` and the `index` function). Or, another student might ask how to convert a string entirely to uppercase (e.g., `text = text.upper()` in Python or `text = text.ToUpper()` in C#). Prompts like these are reasonable and allowed.
+
+However, students are prohibited from giving the AI with any information about the project. If the AI guesses the context of the assignment and provides sample code, please try to ignore this information. Basically, studnets may use AI as a nice interface to the official documentation but may not use AI to write any of the project.
+
 ## Constraints ##
 Additional assumptions and constraints are listed below.
 * Although this cipher can be used for any alphabet-based language, it is reasonable to restrict your code to a single language such as English.

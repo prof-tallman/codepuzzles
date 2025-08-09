@@ -13,6 +13,11 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 4. ***1337 H@cker***: Right now the program uses three separate functions to calculate single letter frequencies, digrams, and trigrams. Analyze these three functions and figure out how to write a single function that will calculate the frequency of any length n-gram.
 5. ***BONUS***: Print the output to the console window starting with the most common n-gram and continuing with the top-15 results in decreasing order. Do not print anything beyond the top-15 reuslts.
 
+## AI Restrictions ##
+Students are allowed to use AI LLMs such as ChatGPT to lookup basic features and examples within the programming language. For example, somebody might ask AI how to read a text file. The AI would most likely respond by explaining how to use functions like `read` (for Python) or `ReadTextFile` for C#.
+
+However, students are prohibited from giving the AI with any information about the project. If the AI guesses the context of the assignment and provides sample code, please try to ignore this information. Basically, studnets may use AI as a nice interface to the official documentation but may not use AI to write any of the project.
+
 ## Constraints ##
 Additional assumptions and constraints are listed below.
 * If the user specifies a file that does not exist, handle the error gracefully by printing a helpful message and then quitting.

@@ -13,6 +13,11 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 4. ***1337 H@cker***: Critical resources are usually protected with highly complex passphrases. Restrict the passwords so that they cannot contain more than three consecutive characters from the same class. In other words, no more than three lowercase letters in a row or no more than three numbers in a row.
 5. ***BONUS***: Prevent adversaries from stealing passwords that are in the history file by encrypting each password. The passwords may be encrypted with a cryptographic hash or a simple encryption algorithm. Import an existing algorithm, do not copy or create one from scratch.
 
+## AI Restrictions ##
+Students are allowed to use AI LLMs such as ChatGPT to lookup basic features and examples within the programming language. For example, somebody might ask AI how to find the length of a string. If the program was being written in C, the AI would likely mention the `strlen()` function. On the other hand, if the programming language was Python, then the AI would almost certainly explain how to use the built-in `len()` function.
+
+However, students are prohibited from giving the AI with any information about the project. If the AI guesses the context of the assignment and provides sample code, please try to ignore this information. Basically, studnets may use AI as a nice interface to the official documentation but may not use AI to write any of the project.
+
 ## Constraints ##
 Additional assumptions and constraints are listed below.
 * Restrict all passwords to English characters, including numbers and punctuations. Passwords can be written in any language and some password algorithms even allow for non-printable characters. But this puzzle should be solved for English characters only.
