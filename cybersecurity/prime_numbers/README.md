@@ -5,10 +5,10 @@ Prime numbers are an important part of public key cryptography, a key technology
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
-1. ***AI Does My HW***: Write a brute force algorithm to determine if a number $n$ is prime. Use the modulus operation to determine if one number is evenly divisible by another. Hardcode a few primes and non-primes to make sure that the algorithm works correctly.
-2. ***Script Kiddie***: Use the Sieve of Eratosthenes to generate all the prime numbers between $2$ and $n$. If $n$ is *not* a prime number, print out the largest prime that is less than $n$. Continue using hardcoded values for $n$.
-3. ***Professional***: Save every calculated prime number to a text file. Before running the slow Sieve of Eratosthenes, check if the number $n$ is contained in the file. If it's not in the file, run the Erathosthenes Algorithm. Instead of using hardcoded values for $n$, use a command line argument.
-4. ***1337 H@cker***: Modify the command line to take two arguments, $m$ and $n$. Find all of the prime numbers between $m$ and $n$ and randomly print one of them. If there are no primes, print the largest prime that is less than $m$
+1. ***AI Does My HW***: Write a brute force algorithm to determine if a number $n$ is prime. Use the modulus operation to determine if one number is evenly divisible by another. It is likely that you will need handle a few special cases manually. Hardcode a few tests with both primes and non-primes to make sure that the algorithm works correctly.
+2. ***Script Kiddie***: Save every calculated prime number to a text file. Before running the slow brute force algorithm, check if the number $n$ is contained in the file. Continue using hardcoded values to test $n$.
+3. ***Professional***: Use a command line parameter instead of a hardcoded value for $n$. If $n$ is contained in the text file, print the cached value. Otherwise, generate the Sieve of Eratosthenes to generate all the prime numbers between $2$ and $n$ and print out the largest prime that is less than equal to $n$. Save this new value to the text file if it is not there already.
+4. ***1337 H@cker***: Modify the command line to take two arguments, $m$ (required) and $n$ (optional). If $n$ is provided, print all of the prime numbers between $m$ and $n$. If $n$ is omitted, print the largest prime that is less than or equal to $m$, using the cache file as described previously.
 5. ***BONUS***: Replace the code for the Sieve of Eratosthenes with the faster Sieve of Atkin.
 
 ## AI Restrictions ##
