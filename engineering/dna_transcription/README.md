@@ -9,6 +9,8 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 4. ***1337 H@cker***:
 5. ***BONUS***:
 
+## AI Restriction ##
+
 ## Constraints ##
 
 ## Examples ##
