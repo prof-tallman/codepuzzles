@@ -6,6 +6,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 1. ***AI Does My HW***:  
   Write a program that calculates and prints the first 10 Fibonacci numbers.
+  
   **Requirements:**
   - Use a function that returns the sequence as a list.
   - Call the function and then print out the entire list.
