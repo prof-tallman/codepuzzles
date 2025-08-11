@@ -8,7 +8,7 @@ The code should be implemented as a publicly available function. Wrap the functi
 * Users specify the puzzle using fixed letters and underscores to represent wildcards (i.e., "uni___s_ty")
 * Players are restricted to a maximum of 7 Scrabble tiles, so the input must be limited to 7 underscores or less
 * If a particular puzzle contains no valid words, return an empty list
-* Each programming language has some form of a list of array, use whichever data structure is appropriate for the programming language
+* Each programming language has some form of a list or an array, use whichever data structure is appropriate for the programming language
 * Enforce the standard Scrabble tile counts (e.g., there are four 'U' tiles and, two 'V' tiles, one 'X' tile, etc)
 
 ## Examples ##
