@@ -54,8 +54,7 @@ user@computer:~$ python fibonacci.py 8 --recursive
 21 (using recursive codepath)
 
 user@computer:~$ python fibonacci.py -3
-Error: The Fibonacci Sequence is not defined for negative numbers.
-
+Error: Fibonacci Sequence is not defined for negative numbers.
 ```
 
 ## Resources ##
