@@ -5,35 +5,30 @@ The Fibonacci Sequence is a series of numbers starting at 1 and 1. The next numb
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
 
 1. ***AI Does My HW***:  
-  Write a program that calculates and prints the first 10 Fibonacci numbers.
-  
-  **Requirements:**
-    - Use a function that returns the sequence as a list.
-    - Call the function and then print out the entire list.
+   Write a program that calculates and prints the first 10 Fibonacci numbers.
+   - Use a function that returns the sequence as a list.
+   - Call the function and then print out the entire list.
 
 2. ***Script Kiddie***:  
-Let the user decide how long the sequence should be.
-**Requirements:**
-*Modify the function to accept a parameter $n$ that indicates the length of the Fibonacci sequence.
-*Your function must return a list of length $n$.
-*The user should specify $n$ at the command line.
+   Let the user decide how long the sequence should be.
+   - Modify the function to accept a parameter $n$ that indicates the length of the Fibonacci sequence.
+   - Your function must return a list of length $n$.
+   - The user should specify $n$ at the command line.
 
 3. ***Professional***:  
-Add a verbose mode and make your Fibonacci generator more memory-efficient when possible.
-**Requirements:**
-*Accept a `-v` or `--verbose` command line flag to control output.
-*Without `--verbose`, print only the nth Fibonacci number.
-*With `--verbose`, print the entire sequence up to $n$.
-*Use two different functions:
-**One that returns the whole list (for verbose mode).
-**One that calculates the nth Fibonacci number using a loop with no more than 3 temporary variables (plus the loop counter) — no list storage allowed.
+   Add a verbose mode and make your Fibonacci generator more memory-efficient when possible.
+   - Accept a `-v` or `--verbose` command line flag to control output.
+   - Without `--verbose`, print only the nth Fibonacci number.
+   - With `--verbose`, print the entire sequence up to $n$.
+   - Use two different functions:
+     - One that returns the whole list (for verbose mode).
+     - One that calculates the th Fibonacci number using a loop with no more than 3 temporary variables (plus the loop counter). No list storage is allowed.
 
 4. ***1337 H@cker***:  
-Add a recursive option and make your program bulletproof against bad input.
-**Requirements:**
-*Accept a `-r` or `--recursive` flag to calculate the sequence using a **recursive** formula.
-*Your program should now have three different Fibonacci functions (list-returning, memory-efficient iterative, and recursive).
-*Perform error checking on the argument $n$ to make sure that it is valid. If the $n$ is unacceptable, quit gracefully with an error message explaining why the value of $n$ does not work so that other computer science students will understand.
+   Add a recursive option and make your program bulletproof against bad input.
+   - Accept a `-r` or `--recursive` flag to calculate the sequence using a **recursive** formula.
+   - Your program should now have three different Fibonacci functions (list-returning, memory-efficient iterative, and recursive).
+   - Perform error checking on the argument $n$ to make sure that it is valid. If the $n$ is unacceptable, quit gracefully with an error message explaining why the value of $n$ does not work so that other computer science students will understand.
 
 5. ***BONUS***:
 Use a simple drawing library to generate a picture that illustrates the Fibonacci Sequence up to degree $n$. For example, draw a sprial where each square's side length matches a Fibonacci number.
