@@ -4,20 +4,20 @@ The Fibonacci Sequence is a series of numbers starting at 1 and 1. The next numb
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
 
-1. ***AI Does My HW***: 
-Write a program that calculates and prints the first 10 Fibonacci numbers.
-**Requirements:**
-*Use a function that returns the sequence as a list.
-*Call the function and then print out the entire list.
+1. ***AI Does My HW***:  
+  Write a program that calculates and prints the first 10 Fibonacci numbers.
+  **Requirements:**
+  - Use a function that returns the sequence as a list.
+  - Call the function and then print out the entire list.
 
-2. ***Script Kiddie***:
+2. ***Script Kiddie***:  
 Let the user decide how long the sequence should be.
 **Requirements:**
 *Modify the function to accept a parameter $n$ that indicates the length of the Fibonacci sequence.
 *Your function must return a list of length $n$.
 *The user should specify $n$ at the command line.
 
-3. ***Professional***:
+3. ***Professional***:  
 Add a verbose mode and make your Fibonacci generator more memory-efficient when possible.
 **Requirements:**
 *Accept a `-v` or `--verbose` command line flag to control output.
@@ -27,7 +27,7 @@ Add a verbose mode and make your Fibonacci generator more memory-efficient when 
 **One that returns the whole list (for verbose mode).
 **One that calculates the nth Fibonacci number using a loop with no more than 3 temporary variables (plus the loop counter) — no list storage allowed.
 
-4. ***1337 H@cker***:
+4. ***1337 H@cker***:  
 Add a recursive option and make your program bulletproof against bad input.
 **Requirements:**
 *Accept a `-r` or `--recursive` flag to calculate the sequence using a **recursive** formula.
