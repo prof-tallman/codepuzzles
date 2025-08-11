@@ -1,19 +1,17 @@
 # Fibonacci Generator #
-The Fibonacci Sequence is a series of numbers starting at 1 and 1. The next number in the sequence is the sum of the two previous numbers. For example, $1+1\rightarrow2$, $1+2\rightarrow3$, and then $2+3\rightarrow5$. So, the first ten numbers in the Fibonacci Sequence are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55. The sequence starts small but gets big quickly. The Fibonacci Sequence is particularly interesting because it is commonly found in nature and has artistic applications.
+The Fibonacci Sequence is a series of numbers starting at 1 and 1. The next number in the sequence is the sum of the two previous numbers. For example, $1+1=2$, which goes on to $1+2=3$, then $2+3=5$ and so on. The first ten numbers in the Fibonacci Sequence are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55. The sequence starts small but gets big quickly. The Fibonacci Sequence is particularly interesting because it is commonly found in nature and has artistic applications.
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
 
 1. ***AI Does My HW***: 
 Write a program that calculates and prints the first 10 Fibonacci numbers.
-
 **Requirements:**
 *Use a function that returns the sequence as a list.
 *Call the function and then print out the entire list.
 
 2. ***Script Kiddie***:
 Let the user decide how long the sequence should be.
-
 **Requirements:**
 *Modify the function to accept a parameter $n$ that indicates the length of the Fibonacci sequence.
 *Your function must return a list of length $n$.
@@ -21,7 +19,6 @@ Let the user decide how long the sequence should be.
 
 3. ***Professional***:
 Add a verbose mode and make your Fibonacci generator more memory-efficient when possible.
-
 **Requirements:**
 *Accept a `-v` or `--verbose` command line flag to control output.
 *Without `--verbose`, print only the nth Fibonacci number.
@@ -32,7 +29,6 @@ Add a verbose mode and make your Fibonacci generator more memory-efficient when 
 
 4. ***1337 H@cker***:
 Add a recursive option and make your program bulletproof against bad input.
-
 **Requirements:**
 *Accept a `-r` or `--recursive` flag to calculate the sequence using a **recursive** formula.
 *Your program should now have three different Fibonacci functions (list-returning, memory-efficient iterative, and recursive).
