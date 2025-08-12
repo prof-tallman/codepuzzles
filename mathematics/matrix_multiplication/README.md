@@ -10,15 +10,22 @@ A matrix is a rectangular arrangement of numbers in rows and columns. In order t
   - Adding up all those products (this is the dot product of the row and column).
 
 For example, multiplying a $2 \times 3$ matrix by a $3 \times 2$ matrix:
-$\begin{bmatrix}1 & 2 & 3 \\\ 4 & 5 & 6\end{bmatrix} \times \begin{bmatrix} 7 & 8 \\\ 9 & 10 \\\ 11 & 12\end{bmatrix}=$
+```
+[ 1  2  3 ]     [ 7   8 ]     [ (1×7 + 2×9 + 3×11)   (1×8 + 2×10 + 3×12) ]
+[ 4  5  6 ]  ×  [ 9  10 ]  =  [ (4×7 + 5×9 + 6×11)   (4×8 + 5×10 + 6×12) ]
+                [ 11 12 ]
+
+                           =  [ 58   64 ]
+                              [ 139 154 ]
+```
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
 1. ***AI Does My HW***:  
    Multiply two hardcoded matrices and print the result.
-   - Write a function `matrix_multiply(A, B)` that:
+   - Write a function `matrix_multiply(a, b)` that:
      - Accepts two matrices represented as lists of lists.
-     - Returns a new matrix containing the result of multiplying $A \times B$.
+     - Returns a new matrix containing the result of multiplying $a \times b$.
    - In main, call this function with two hardcoded matrices that meet the multiplication dimension requirement.
    - Print the resulting matrix in a readable format (rows on separate lines).
 
@@ -42,7 +49,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 5. ***BONUS***:  
    Add advanced benchmarking functionality and performance checks.
    - Implement a `--random m n k min max` option that:
-     - Generates an m × n matrix and an n × k matrix.
+     - Generates an $m \times n$ matrix and an $n \times k$ matrix.
      - Fills them with random integers between min and max.
    - Detect and warn if the result contains numbers that exceed a certain threshold (e.g., 1,000,000). When this occurs, give the user the option to quit or continue as early as possible.
    - Measure and print the time taken for each multiplication.
@@ -61,7 +68,7 @@ Additional assumptions and constraints are listed below:
 - Large random matrices may take noticeable time to compute, so handle with care.
 
 ## Examples ##
-The first example is for the "AI Does My Homework" stage and uses an internal, hardcoded matrix. The second example is for the "Script Kiddie" which prompts the user to dynamically enter their own matrix. The last example (forth) shows pretty printing.
+The first example is for the "AI Does My Homework" stage and uses an internal, hardcoded matrix. The second example is for the "Script Kiddie" which prompts the user to dynamically enter their own matrix.
 ```
 user@computer:~$ python matrix.py
 [58, 64]
