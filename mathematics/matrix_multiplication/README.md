@@ -3,7 +3,7 @@ Write a program that multiplies two matrices together.
 
 A matrix is a rectangular arrangement of numbers in rows and columns. In order to multiply two matrices:
 - The number of columns in the first matrix must equal the number of rows in the second matrix.
-- If the first matrix is $m\timesn$ and the second is $n\timesk$, the resulting matrix will be $m\timesk$.
+- If the first matrix is $m \times n$ and the second is $n \times k$, the resulting matrix will be $m \times k$.
 - The element at position $(i,j)$ in the result is found by:
   - Taking the i-th row from the first matrix and the j-th column from the second matrix.
   - Multiplying each pair of corresponding elements.
