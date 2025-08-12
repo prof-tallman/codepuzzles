@@ -28,8 +28,8 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 3. ***Professional***:
    Add n-grams and explanations to make the tool more robust and helpful.
    - Add a new command line option `--ngrams N` (where $N$ is an integer ≥ 2) to build character n-grams for mode `--chars`, or word n-grams when using mode `--words`.
-     - Example (chars, N=3): `'hello world!'` → [ `hel`, `lo ` (include the space), `wor`, `ld!` ]
-     - Example (words, N=2): `'to be or not to be'` → `to be`, `or not`, `to be`
+     - Example (chars, N=3): `'hello world!'` → [ `'hel'`, `'lo '` (includes the space), `'wor'`, `'ld!'` ]
+     - Example (words, N=2): `'to be or not to be'` → `'to be'`, `'or not'`, `'to be'`
    - Add `--explain` to print: |A|, |B|, |A∩B|, |A∪B|, and a sorted list (or capped count) of the intersection and union elements.
 
 4. ***1337 H@cker***:
