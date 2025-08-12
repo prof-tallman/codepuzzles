@@ -10,7 +10,10 @@ A matrix is a rectangular arrangement of numbers in rows and columns. In order t
   - Adding up all those products (this is the dot product of the row and column).
 
 For example, multiplying a $2 \times 3$ matrix by a $3 \times 2$ matrix:
-$$\begin{bmatrix}1 & 2 & 3 \\\ 4 & 5 & 6\end{bmatrix} \times \begin{bmatrix} 7 & 8 \\\ 9 & 10 \\\ 11 & 12\end{bmatrix}=$$
+[  1   2   3 ]   [  7   8 ]   [ (1×7 + 2×9 + 3×11)   (1×8 + 2×10 + 3×12) ]
+[  4   5   6 ] x [  9  10 ] = [ (4×7 + 5×9 + 6×11)   (4×8 + 5×10 + 6×12) ]
+                  [ 11  12 ]
+{bmatrix}=$
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
