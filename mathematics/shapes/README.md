@@ -80,10 +80,11 @@ Formula: Area of Square - Area of Polygon
          4 * r^2 - n * r^2 * sin(π/n) * cos(π/n)
 
 user@computer:~$ python shapes.py 5 6 --explain
-Mode: circumradius
-Square area = 4 * r^2 = 100.000
-Polygon area = n * r^2 * sin(π/n) * cos(π/n) = 78.961
-Shaded area = 21.039
+35.048
+Area of Square:  100
+Area of Polygon: 64.952
+Formula: Area of Square - Area of Polygon
+         4 * r^2 - n * r^2 * sin(π/n) * cos(π/n)
 ```
 
 ## Resources ##
