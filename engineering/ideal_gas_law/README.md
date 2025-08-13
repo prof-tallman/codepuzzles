@@ -8,7 +8,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 1. ***AI Does My HW***:  
    On your personal computer, write a function that computes the number of moles $n$ of a gas using hardcoded values for P, V, R, and T.
-   - Use $P = 1 &nbsp atm$ and $R = 8.205736 m^3 \cdot atm \cdot K^{-1} \cdot mol^{-1}$
+   - Use $P = 1~atm$ and $R = 8.205736~m^3 \cdot atm \cdot K^{-1} \cdot mol^{-1}$
    - Hardcode a reasonable volume $V$ and temperature $T$ for your dorm room, making sure that you use the correct units.
    - Calculate and print the number of moles $n$ for the room.
 
