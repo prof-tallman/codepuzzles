@@ -48,7 +48,7 @@ Students may not share the project text or context with AI or ask AI to write th
 There are a number of important constraints for this project.
 - Accept input sequences with mixed case but treat input case-insensitively; output must be uppercase.
 - Valid characters are `A`, `C`, `G`, and `T` only. Ignore spaces, newlines, and tab characters (no errors, just skip over them). All other characters produce errors.
-- The GC% content is computed as: $$GC = 100 \times \dfrac{ total G's + total C's}{total nucleotides}$$
+- The GC% content is computed as: $$GC = 100 \times \dfrac{ G + C}{G + C + A + T}$$
 - Round displayed GC% to 3 decimals.
 - With `--mseq`, output one result per record, in the same order as input.
 
