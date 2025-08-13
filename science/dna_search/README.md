@@ -34,7 +34,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 4. ***1337 H@cker***:  
    Support common biological formats and output the results to a file.
-   - Allow for both DNA and RNA nucleotide sequences. In RNA, the nucleotide `U` is instead of `T`.
+   - Allow for both DNA and RNA nucleotide sequences. In RNA, the nucleotide `U` (Uracil) replaces `T` (Thymine).
    - Add a new flag `--fasta` that works in conjunction with `--file <path>`. When the `--fasta` flag is used, the input file are assumed to be in the FASTA file format.
    - If the `--output <path>` flag is used, the results should be stored in a CSV file.
      - The CSV file should include 6 columns: filename, line number, index, previous-k nucleotides, match string, and next-k nucleotides. The context has been split across three columns.
@@ -49,7 +49,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    - Compression: auto-detect `.gz` inputs for files/FASTA.
 
 ## AI Restriction ##
-Students may use AI LLMs to look up how to: parse command-line arguments, read files, parse FASTA, implement Hamming distance, or handle .gz files.
+Students may use AI LLMs to look up how to: parse command-line arguments, read files, parse FASTA, implement Hamming distance, or handle `.gz` files.
 
 Students may not share the project text or ask AI to write the solution. Treat AI like a searchable interface to official documentation and language references only.
 
@@ -63,8 +63,8 @@ Please see the following constraints:
 ## Examples ##
 ```
 user@computer:~$ python dnalookup.py "AGTAGTCGTTGTTGTCA" "GTT" -k 4
-7  CAACGTTGTTG
-9  CGTTGTTGTC
+7   ...AGTC [GTT] GTTG...
+10  ...CGTT [GTT] GTCA
 
 user@computer:~$ python dnalookup.py "AGTAGTCGTTGTTGTCA" "AAA" --count
 0
@@ -72,10 +72,10 @@ user@computer:~$ python dnalookup.py "AGTAGTCGTTGTTGTCA" "AAA" --count
 user@computer:~$ cat seqs.txt
 AGTA
 GTCGTTG
-TTGTCA
+GTTTCA
 user@computer:~$ python dnalookup.py --file seqs.txt GTT -k 2
-seqs.txt:2:3  2  CGTTG
-seqs.txt:3:1  0  TTGTC
+seqs.txt 2:3  ...TC [GTT] G
+seqs.txt 3:0        [GTT] TC...
 
 user@computer:~$ cat genes.fasta
 >geneA
@@ -83,9 +83,8 @@ AGTAGTCG
 TTGTTG
 >geneB
 cgat
-user@computer:~$ python dnalookup.py --fasta --rc --file genes.fasta GTT -k 2
-geneA  2  line:2:1  +  CGTTG
-geneA  0  line:2:1  -  AACAA
+user@computer:~$ python dnalookup.py --fasta --file genes.fasta GTT -k 2
+geneA 2:2  ...TG [GTT] G
 ```
 
 ## Resources ##
