@@ -1,7 +1,5 @@
 # Streamflow Analyzer #
-Analyze a three-week dataset of streamflow measurements from a U.S. Geological Survey (USGS) NWIS station. Instead of pulling live data, you’ll work with a CSV file that already contains the data dump. You’ll manually parse and process this file, calculate summary statistics, and eventually create a plot — but without using Pandas or Numpy until after the project is complete.
-
-The dataset contains daily measurements for parameters such as discharge, gauge height, and possibly temperature. All calculations in the first stages must be done manually by iterating through a list of lists after parsing the CSV file.
+Analyze a three-week dataset of streamflow measurements from a U.S. Geological Survey (USGS) NWIS station. Instead of pulling live data, you’ll work with a CSV file that already contains the data dump. You’ll manually parse and process this file, calculate summary statistics, and eventually create a plot.
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students may complete the project in any order and might find better ways to meet the requirements.
@@ -16,7 +14,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 2. ***Script Kiddie***:  
    Extract and print basic statistics for the discharge column.
    - Identify the column index for discharge from the header row.
-   - Convert that column's values from strings to floats as you process the rows.
+   - Convert that column's values from strings to numbers as you process the rows.
    - Manually compute (avoid any pre-existing statistics function for you):
      - Minimum value
      - Maximum value
@@ -45,10 +43,10 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 ## AI Restriction ##
 Students may use AI to look up:
 - How to open and read CSV files
-- How to parse strings into floats
+- How to parse strings into integers or floats
 - Unit conversions and statistical algorithms
 - How to format numbers or strings for printing
-- How to use Matplotlib for plotting (only at the final stage)
+- How to use common graph/plot libraries (for the final stage)
 
 Students may not share the project description or ask AI to write the complete solution. Asking the AI to connect individual concepts is also prohibited.
 
@@ -56,7 +54,7 @@ Students may not share the project description or ask AI to write the complete s
 This project has a number of important details that must be followed.
 - All numeric calculations for stages 1–4 must be done manually, by manually iterating over dataset. No statistics or data-analysis libraries are allowed (but rest assured, they exist... if you need to do this outside of the classroom).
 - Dates in the CSV file will be in YYYY-MM-DD format.
-- The discharge column will have numeric values in cubic feet per second (cfs).
+- The discharge column contains numeric values in cubic feet per second (cfs).
 - Discharge readings are reported every 15 minutes, an important fact for several of the calculations.
 - Output should be human-readable, show units, and be neatly aligned.
 - Use common plotting libraries to handle all graphics (but no additional analysis libraries). A common module for Python is called Matplotlib.
