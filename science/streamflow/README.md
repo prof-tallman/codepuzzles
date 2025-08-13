@@ -1,5 +1,5 @@
 # Streamflow Analyzer #
-Analyze a three-week dataset of streamflow measurements from a U.S. Geological Survey (USGS) NWIS station. Instead of pulling live data, you’ll work with a CSV file that already contains the data dump. You’ll manually parse and process this file, calculate summary statistics, and eventually create a plot.
+Analyze a three-week dataset [streamflow.csv](https://github.com/prof-tallman/codepuzzles/tree/main/science/streamflow/streamflow.csv) of streamflow measurements from a U.S. Geological Survey (USGS) NWIS station. Instead of pulling live data, you’ll work with a CSV file that already contains the data dump. You’ll manually parse and process this file, calculate summary statistics, and eventually create a plot.
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students may complete the project in any order and might find better ways to meet the requirements.
@@ -88,4 +88,4 @@ The river is currently at 9540 CFS and rising at 20 CFS/hr
 ```
 
 ## Resources ##
-Streamflow dataset to use for this project: [streamflow.csv](https://github.com/prof-tallman/codepuzzles/tree/main/science/streamflowstreamflow.csv). The data for this project originally came from US Geological Survey (USGS) [National Water Information System](https://waterdata.usgs.gov/nwis) (NWIS) databases. The data can be [downloaded again](https://waterservices.usgs.gov/nwis/iv/?sites=11530000&startDT=2019-05-01&endDT=2019-06-30&parameterCd=00060&siteStatus=all&format=json) here, but students will need to reformat it from JSON to CSV format.
+Streamflow dataset to use for this project: [streamflow.csv](https://github.com/prof-tallman/codepuzzles/tree/main/science/streamflow/streamflow.csv). The data for this project originally came from US Geological Survey (USGS) [National Water Information System](https://waterdata.usgs.gov/nwis) (NWIS) databases. The data can be [downloaded again](https://waterservices.usgs.gov/nwis/iv/?sites=11530000&startDT=2019-05-01&endDT=2019-06-30&parameterCd=00060&siteStatus=all&format=json) here, but students will need to reformat it from JSON to CSV format.
