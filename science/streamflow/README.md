@@ -18,14 +18,15 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    - Manually compute (avoid any pre-existing statistics function for you):
      - Minimum value
      - Maximum value
-     - Mean value
+     - Mean value (rounded to 0 decimal places)
      - Range of values
    - Print the results in a readable format.
 
 3. ***Professional***:  
    Output important streamflow statistics that help scientists understand the health of the ecosystem.
+   - Print the start and end date for the flow measurements.
    - Calculate the total volume of water that has flowed past the sensor over the last 10 days in acre-feet
-   - Extrapolate the river's change in flow over the last hour using the most recent two discharge measurements, report the rate in cfs/hour.
+   - Extrapolate the river's change in flow over the last hour using the most recent two discharge measurements, report the rate in cfs/hour. Always report a positive number, but explain whether the river is rising or dropping.
    - Use position-based command line parameters to specify the name of the file. Assume that any files provided by the user will follow the same structure/format as the sample file.
 
 4. ***1337 H@cker***:  
@@ -60,21 +61,31 @@ This project has a number of important details that must be followed.
 - Use common plotting libraries to handle all graphics (but no additional analysis libraries). A common module for Python is called Matplotlib.
 
 ## Examples ##
+Here are some sample runs for a ***different*** dataset than what has been provided to you.
 ```
-user@computer:~$ python streamflow.py data.csv
-['2024-07-01', '2.12', '3.45', '...']
-['2024-07-02', '2.56', '3.67', '...']
-['2024-07-03', '2.48', '3.22', '...']
-['2024-07-04', '2.75', '3.55', '...']
-['2024-07-05', '2.98', '3.78', '...']
+user@computer:~$ python streamflow.py
+2025-01-01 00:00 -> 8010 CFS
+2025-01-01 00:15 -> 8200 CFS
+2025-01-01 00:30 -> 8150 CFS
+2025-01-01 00:45 -> 8050 CFS
+2025-01-01 01:00 -> 7980 CFS
 
-user@computer:~$ python streamflow.py data.csv
+user@computer:~$ python streamflow.py
 Discharge statistics:
-Count: 21
-Min: 2.12 cfs
-Max: 3.78 cfs
-Mean: 2.94 cfs
+Min:   3260 CFS
+Max:   14300 CFS
+Mean:  5251 CFS
+Range: 11040 CFS
+
+user@computer:~$ python streamflow.py streamflow.csv
+Streamflow from 2025-01-01 00:00 to 2025-02-28 23:59
+  Min:   3260 CFS
+  Max:   14300 CFS
+  Mean:  5251 CFS
+  Range: 11040 CFS
+Over the past 10 days, 104,152 acre-feet have flowed down the river
+The river is currently at 9540 CFS and rising at 20 CFS/hr
 ```
 
 ## Resources ##
-The data for this project came from US Geological Survey (USGS) [National Water Information System](https://waterdata.usgs.gov/nwis) (NWIS) databases.
+Streamflow dataset to use for this project: [streamflow.csv](https://github.com/prof-tallman/codepuzzles/tree/main/science/streamflowstreamflow.csv). The data for this project originally came from US Geological Survey (USGS) [National Water Information System](https://waterdata.usgs.gov/nwis) (NWIS) databases. The data can be [downloaded again](https://waterservices.usgs.gov/nwis/iv/?sites=11530000&startDT=2019-05-01&endDT=2019-06-30&parameterCd=00060&siteStatus=all&format=json) here, but students will need to reformat it from JSON to CSV format.
