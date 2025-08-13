@@ -1,12 +1,14 @@
 # Ideal Gas Law #
-Use the Ideal Gas Law $PV=nRT$ to compute the mole count for the air in a room. Start with simple hardcoded calculations, move to command-line inputs with unit conversion, and then integrate Raspberry Pi sensors to read temperature and pressure while estimating room volume. In the Ideal Gas Law, $P \times V = n \times R \times T$, where 𝑃 is pressure ($atm$), 𝑉 is volume ($m^3), 𝑛 is moles of gas, 𝑇 is temperature (K), and 𝑅 is the gas constant.
+Use the Ideal Gas Law $PV=nRT$ to compute the mole count for the air in a room. Start with simple hardcoded calculations and move to a Raspberry Pi connected to external sensors.
+
+In the Ideal Gas Law, $P \times V = n \times R \times T$, where 𝑃 is pressure ($atm$), 𝑉 is volume ($m^3), 𝑛 is moles of gas, 𝑇 is temperature (K), and 𝑅 is the gas constant.
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
 
 1. ***AI Does My HW***:  
    On your personal computer, write a function that computes the number of moles $n$ of a gas using hardcoded values for P, V, R, and T.
-   - Use $P = 1 atm$ and $R = 8.205736 m^3 \cdot atm \cdot K^{-1} \cdot mol^{-1}$
+   - Use $P = 1 &nbsp atm$ and $R = 8.205736 m^3 \cdot atm \cdot K^{-1} \cdot mol^{-1}$
    - Hardcode a reasonable volume $V$ and temperature $T$ for your dorm room, making sure that you use the correct units.
    - Calculate and print the number of moles $n$ for the room.
 
