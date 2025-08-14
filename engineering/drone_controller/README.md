@@ -44,7 +44,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    - Use the current time as part of the filename to ensure that old videos are not overwritten by new videos.
 
 ## Constraints ##
-Students are allowed to use AI LLMs such as ChatGPT to lookup basic help and API usage for any non-standard modules. For example, if using PyGame, students might ask which functions configure the size of the display window (it's ) or how to display an image to the display window (it's the 'blit' function). 
+Students are allowed to use AI LLMs such as ChatGPT to lookup basic help and API usage for any non-standard modules. For example, if using PyGame, students might ask which functions configure the size of the display window (it's `pygame.display.set_mode()`) or how to display an image to the display window (it's the `blit()` function). 
 
 However, students are prohibited from giving the AI any information about the assignment or the context of the project. Basically, students may use AI as a nice interface to the official documentation but it may not write any code for the project.
 
@@ -52,7 +52,7 @@ However, students are prohibited from giving the AI any information about the as
 Here is a screenshot of a fun interface that some senior computer science students quickly put together. This program goes above and beyond what is expected by completing all of the ***1337 H@cker*** requirements, the ***BONUS*** options, and more. Consider it as inspiration for what can be done with a bit more computer science experience.
 
 ## Resources ##
-For assistance, see the official documentation:
+Most students will be using DJI Tello drones and programming in Python.
 * [DJI Tello User Manual](https://github.com/prof-tallman/HelloRoboMaster/blob/main/RoboMaster_TT_Tello_Talent_User_Manual_en.pdf)
 * [DJI Tello Software Development Kit](https://github.com/prof-tallman/HelloRoboMaster/blob/main/Tello_SDK_3.0_User_Guide_en.pdf)
 * [Current Github release](https://github.com/damiafuentes/DJITelloPy) of the `djitellopy` module
