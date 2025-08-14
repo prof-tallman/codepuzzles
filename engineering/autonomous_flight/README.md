@@ -1,27 +1,52 @@
 # Tello Drone Flight #
-Fly a drone around an obstacle course.
+Fly a drone around an obstacle course. In this project, students will program the drone to fly autonomously through obstacle courses and create an interactive control system.
 
 This puzzle requires access to a DJI Tello Talent Drone, or a similar drone that can be flown programmatically using a suitable programming language. Tello Drones can be controlled with a Python library that allows a computer to send basic commands to the drone. 
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
-1. ***AI Does My HW***: Program a drone to fly autonomously through an obstacle course of your own choosing. The course must include *five* manuevers around obstacles that are no more than 3 meters apart and movement in along all three flight axis (x, y, and z). Submit your code and demonstrate your drone successfully flying through the course.
-2. ***Script Kiddie***: Program a drone to fly autonomously through an obstacle course of your own choosing. The course must include *ten* manuevers around obstacles that are no more than 2 meters apart from each other and movement along all three flight axis (x, y, and z). Submit your code and demonstrate your drone successfully flying through the course. For the demonstration, an instructor might ask you to modify the obstacle course to verify sufficient understanding of the program.
-3. ***Professional***: Create a program that allows you to interactively fly a drone. The program should allow the pilot to takeoff and land, manuever along all three flight axis (x, y, and z), and take a photograph with the drone's camera. You are allowed to use PyGame and/or other libraries that handle raw keyboard input without pressing the <ENTER> button, but this is not required. If anything unexpected happens, your program should immediately land the drone, display a helpful message, and exit gracefully. Submit your code and demonstrate your drone flying to an interesting location, saving a photograph to a file, and then returning. For the demonstration, an instructor might ask you to modify the flight controls to verify sufficient understanding of the program.
-4. ***1337 H@cker***: Complete all of the requirements for the ***Professional*** ranking and add new controls to rotate the drone clockwise/CCW and perform flips. Use a GUI framework such as PyGame to process raw keyboard input and display any photographs taken with the drone's camera. This interface must show the drone's current battery level to the user. Submit your code and demonstrate your drone flying to an interesting location that is not accessible to most people (e.g., inspect the roof for leaks), taking a photograph and displaying it on the GUI display, returning, and performing a flip to celebrate.
-5. ***BONUS***: Improve your program's GUI interface to show live video from the camera.
+
+1. ***AI Does My HW***:  
+   Program a drone to fly autonomously through an obstacle course of the students own choosing. 
+   - The course must include *five* manuevers around obstacles that are no more than three meters apart
+   - The course requires movement along *two* of the three flight axis (x, y, and z).
+   Submit the source code and demonstrate a successful flight through the course.
+
+2. ***Script Kiddie***:  
+   Increase the complexity of the obstacle ocurse.
+   - The course must include *ten* manuevers around obstacles that are no more than two meters apart
+   - Movement must include *all three* flight axis (x, y, and z).
+   Submit the source code and demonstrate a successful flight through the course.
+
+3. ***Professional***:  
+   Integrate curved movements to make for a smoother flight around the obstacle course.
+   - Not every turn needs to be curved, but students must use at least three different curves
+   - Curved functions are difficult and probably require pencil-paper calculations.
+   Submit the source code and demonstrate a successful flight through the course.
+
+4. ***1337 H@cker***:  
+   Program the drone to fly in a pattern that spells "CSC104".
+   - The letters should be drawn vertically in the air so that an observer on the ground can easily watch the movements.
+   - Use the curve functions to create smooth letter Cs, Ss, and 0s.
+   - Connect the letters from one to another in whatever pattern seems most appropriate.
+   - Drones may need to backtrack in order to position themselves for the next letter.
+   Submit the source code and demonstrate a successful flight through the course.
+
+5. ***BONUS***:
+   Attach a light to the top of the drone so that the drone's movement can be seen at night.
 
 ## Constraints ##
-Students are allowed to use AI LLMs such as ChatGPT to lookup basic help and API usage for modules like djitellopy and pygame. For example, you might ask which PyGame functions configure the size of the display window (it's )or how to display an image to the display window (it's the 'blit' function). Or, you might ask the AI to describe how the '' function works or how to save a file to disk (...). 
+Students are allowed to use AI LLMs such as ChatGPT to lookup basic help and API usage for modules such as `djitellopy`. For example, students might ask for help understanding and using the `curve_xyz_speed` function and the difference between `(x1, y1, z1)` vs `(x2, y2, z2)` parameters. 
 
-However, students are prohibited from giving the AI any information about the assignment or the context of the program that you are writing. Basically, you may use AI as a nice interface to the official documentation but it may not write any of the project for you.
+However, students are prohibited from giving the AI any information about the assignment or the context of the programming project. Basically, students may use AI as a nice interface to the official documentation but it may not write any of the project code.
 
 ## Examples ##
-Here is a screenshot of a fun interface that some senior computer science students quickly put together. This program goes above and beyond what is expected by completing all of the ***1337 H@cker*** requirements, the ***BONUS*** options, and more. Consider it as inspiration for what can be done with a bit more computer science experience.
+Coming soon!
 
 ## Resources ##
-For assistance, see the official documentation:
-* DJI Tello User Guide,
-* DJI Tello Software Development Kit,
-* the current release of the `djitellopy` module,
-* ...and the approrpriate PyGame documentation.
+Most students will be using DJI Tello drones and programming in Python.
+* [DJI Tello User Manual](https://github.com/prof-tallman/HelloRoboMaster/blob/main/RoboMaster_TT_Tello_Talent_User_Manual_en.pdf)
+* [DJI Tello Software Development Kit](https://github.com/prof-tallman/HelloRoboMaster/blob/main/Tello_SDK_3.0_User_Guide_en.pdf)
+* [Current Github release](https://github.com/damiafuentes/DJITelloPy) of the `djitellopy` module
+* [Sample project](https://github.com/prof-tallman/HelloRoboMaster) using `djitellopy` module in Python
+
