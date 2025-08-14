@@ -58,11 +58,11 @@ user@computer:~$ mcalc H2O
 user@computer:~$ mcalc ASDFG
 Error: molecule 'A' is not a valid element
 
-joshua@laptop:~$ mcalc NaCl
+user@computer:~$ mcalc NaCl
 Found molecule 'NaCl' in cache
 #####
 
-joshua@laptop ~ % mcalc ()
+user@computer:~$ mcalc ()
 #####
 ```
 
