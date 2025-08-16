@@ -61,7 +61,7 @@ This project has a number of important details that must be followed.
 - Use common plotting libraries to handle all graphics (but no additional analysis libraries). A common module for Python is called Matplotlib.
 
 ## Examples ##
-Here are some sample runs for a ***different*** dataset than what has been provided to you.
+Here are some sample runs from a ***different*** dataset.
 ```
 user@computer:~$ python streamflow.py
 2025-01-01 00:00 -> 8010 CFS
