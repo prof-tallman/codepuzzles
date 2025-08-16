@@ -5,7 +5,7 @@ The Jaccard Index measures the overlap between two sets. It is given by the equa
 
 For example, if set #1 is {A, B, F, H, T, Y} and set #2 is {B, C, F, G, S, Y}, then the intersection is {B, F, Y} (3 elements) and the union is {A, B, C, F, G, H, S, T, Y} (9 elements). So $J=\frac{3}{9}=0.333$.
 
-In this project, you’ll take two inputs, turn them into sets (characters, words, or n-grams), and calculate their Jaccard similarity. You’ll also add flags to control how the sets are built and how results are displayed.
+In this project, take two inputs and turn them into sets (characters, words, or n-grams) to calculate their Jaccard similarity. Add flags to control how the sets are built and how results are displayed.
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.

@@ -12,11 +12,11 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 2. ***Script Kiddie***:  
    Let the user decide how long the sequence should be.
    - Modify the function to accept a parameter $n$ that indicates the length of the Fibonacci sequence.
-   - Your function must return a list of length $n$.
+   - The function must return a list of length $n$.
    - The user should specify $n$ at the command line.
 
 3. ***Professional***:  
-   Add a verbose mode and make your Fibonacci generator more memory-efficient when possible.
+   Add a verbose mode and make the Fibonacci generator more memory-efficient when possible.
    - Accept a `-v` or `--verbose` command line flag to control output.
    - Without `--verbose`, print only the nth Fibonacci number.
    - With `--verbose`, print the entire sequence up to $n$.
@@ -25,9 +25,9 @@ These stages are friendly suggestions to help new programmers. Skilled students 
      - One that calculates the th Fibonacci number using a loop with no more than 3 temporary variables (plus the loop counter). No list storage is allowed.
 
 4. ***1337 H@cker***:  
-   Add a recursive option and make your program bulletproof against bad input.
+   Add a recursive option and make the program bulletproof against bad input.
    - Accept a `-r` or `--recursive` flag to calculate the sequence using a **recursive** formula.
-   - Your program should now have three different Fibonacci functions (list-returning, memory-efficient iterative, and recursive).
+   - The program should now have three different Fibonacci functions (list-returning, memory-efficient iterative, and recursive).
    - Perform error checking on the argument $n$ to make sure that it is valid. If the $n$ is unacceptable, quit gracefully with an error message explaining why the value of $n$ does not work so that other computer science students will understand.
 
 5. ***BONUS***:
@@ -58,4 +58,4 @@ Error: Fibonacci Sequence is not defined for negative numbers.
 ```
 
 ## Resources ##
-If you are attempting the bonus, you might consider using Python with the TkInter module.
+Students who are attempting the bonus should consider using GUI libraries such as Python's TkInter module or the C#'s .NET MAUI.

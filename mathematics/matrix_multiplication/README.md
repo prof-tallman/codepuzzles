@@ -44,7 +44,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 4. ***1337 H@cker***:  
    Create two new options that improve the user experienc.
    - Add an optional `--pretty` flag to format output in aligned columns.
-   - Add an optional `--transpose` flag to automatically transpose the second matrix before multiplication. What this means is that your program will be able to multiple matrices with dimensions $m \times n$ and $k \times n$ if, and only if, the `--transpose` flag is used because it will convert the second matrix to a new matrix of dimension $n \times k$.
+   - Add an optional `--transpose` flag to automatically transpose the second matrix before multiplication. What this means is that the program will be able to multiple matrices with dimensions $m \times n$ and $k \times n$ if, and only if, the `--transpose` flag is used (because it will convert the second matrix to a new matrix of dimension $n \times k$).
 
 5. ***BONUS***:  
    Add advanced benchmarking functionality and performance checks.
