@@ -7,19 +7,19 @@ In the Ideal Gas Law, $P \times V = n \times R \times T$, where 𝑃 is pressure
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
 
 1. ***AI Does My HW***:  
-   On your personal computer, write a function that computes the number of moles $n$ of a gas using hardcoded values for P, V, R, and T.
+   On a personal computer, write a function that computes the number of moles $n$ of a gas using hardcoded values for P, V, R, and T.
    - Use $P = 1 \ atm$ and $R = 8.205736 \ m^3 \cdot atm \cdot K^{-1} \cdot mol^{-1}$
-   - Hardcode a reasonable volume $V$ and temperature $T$ for your dorm room, making sure that you use the correct units.
+   - Hardcode a reasonable volume $V$ and temperature $T$ for a typical dorm room, making sure to use the correct units.
    - Calculate and print the number of moles $n$ for the room.
 
 2. ***Script Kiddie***:
-   Still on your personal computer, modify the program to let the user input command line parameters for the volume of the room.
+   Still on the personal computer, modify the program to let the user input command line parameters for the volume of the room.
    - Allow the user to use either `--si` or `--metric` to specify whether the volume measurements are in feet or meters.
    - Use three command line positional arguments to that represent the width, length, and height of a room. If these parameters are missing, assume $10' \times 12' \times 8'$ as the dimensions and print a short message to remind the user of these default dimensions.
    - When necessary, convert the user's input from cubic feet to cubic meters for the calculation.
 
 3. ***Professional***:
-   Transfer your program to a Raspberry Pi and run it manually.
+   Transfer the program to a Raspberry Pi and run it manually.
    - It would be easiest to run the Raspberry Pi device in graphical desktop mode with a monitor, although students are welcome to try the command line version of Raspberry Pi OS.
    - Every time that the program runs, in addition to printing the output, it should also save the readings and calculations to a log file.
      - Limit the log file entry to a single line. Find a simple, easy to read format for the output.

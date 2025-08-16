@@ -3,7 +3,7 @@ Compute the reverse complement of a DNA sequence. A DNA string uses the letters 
 
 Example: `CGTTTA` → reverse = `ATTTGC` → complement = `TAAACG`.
 
-You’ll start with a hardcoded function and progress to a robust command-line tool that supports files, FASTA, GC content, RNA output, and more.
+Start with a hardcoded function and progress to a robust command-line tool that supports files, FASTA, GC content, RNA output, and more.
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.

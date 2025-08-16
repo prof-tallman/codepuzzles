@@ -25,7 +25,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 4. ***1337 H@cker***:  
    Add a caching feature that will save the molecular formula and mass of any/all inputs to a text file.
-   - Every time that a new molecule is input--e.g., a molecule that is not already included in the cache--it will be calculated manually using your code and then the result will be saved to the cache. 
+   - Every time that a new molecule is input--e.g., a molecule that is not already included in the cache--it will be calculated manually using the program and then the result will be saved to the cache. 
    - Before taking the time to run the slow manual calculation, the program should check the cache and, if the molecule exists in the cache, use the cached answer instead of running the calculation from scratch.
    - If the program finds a molecule in the cache, it should include a short message explaining this in the output.
 
