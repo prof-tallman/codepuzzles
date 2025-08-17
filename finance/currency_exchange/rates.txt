@@ -1,0 +1,31 @@
+# Sample currency exchange rates
+
+# British Pound (£)
+GBP:1.23
+
+# Euro (€)
+EUR:1.05
+
+# Japanese Yen (¥)
+JPY:156.80
+
+# Canadian Dollar (C$)
+CAD:1.36
+
+# Swiss Franc (CHF)
+CHF:0.91
+
+# Australian Dollar (A$)
+AUD:1.51
+
+# Chinese Yuan (¥ / 元)
+CNY:7.24
+
+# Indian Rupee (₹)
+INR:83.12
+
+# Mexican Peso ($ or Mex$)
+MXN:17.25
+
+# South Korean Won (₩)
+KRW:1330.45
