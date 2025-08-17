@@ -7,11 +7,35 @@ The term n-gram is generic and it represents a sequence of letters of arbitrary 
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
-1. ***AI Does My HW***: Write a function that will calculate the frequency of each single letter a-z within a text string. Return the result as either a 26-element list or a dictionary. Call this function with a hardcoded text message that contains lower-case letters *only*.
-2. ***Script Kiddie***: Write a second function that will calculate the frequency of each digram; write a third function that will return the frequency of every trigram. For each function, return the results in a dictionary. Pass the same hardcoded text message to each of these functions and make sure that they return the correct results.
-3. ***Professional***: Instead of passing a hardcoded message to each of your functions, read the message from a text file. Start by hardcoding the name of the text file. Then change the program to take a command line argument that contains the name of the text file. Handle text that includes mixed-case letters, numbers, and punctuation. Remove all of the non-alphabetic characters so that your functions treat the text as one giant string of letters. Print all of the results.
-4. ***1337 H@cker***: Right now the program uses three separate functions to calculate single letter frequencies, digrams, and trigrams. Analyze these three functions and figure out how to write a single function that will calculate the frequency of any length n-gram.
-5. ***BONUS***: Print the output to the console window starting with the most common n-gram and continuing with the top 10 results in decreasing order. Do not print anything beyond the top 10 reuslts.
+
+1. ***AI Does My HW***:  
+   Calculate the frequency of each letter in a string.
+   - Write a function that will calculate the frequency of each single letter a-z within a text string.
+   - Return the result as either a 26-element list or as a dictionary.
+   - Call this function with a hardcoded text message that contains lower-case letters *only*.
+
+2. ***Script Kiddie***:  
+   Add digram and trigram frequency counters.
+   - Write a second function that will calculate the frequency of each digram.
+   - Write a third function that will return the frequency of every trigram.
+   - For each function, return the results in a dictionary.
+   - Pass the same hardcoded text message to each of these functions and make sure that they return the correct results.
+
+3. ***Professional***:  
+   Calculate the frequency of n-grams from a text file that was given as a command line parameter.
+   - Instead of passing a hardcoded message to each function, read the message from a text file.
+   - Start by hardcoding the name of the text file. Then change the program to take a command line argument that contains the name of the text file.
+   - Print all of the results.
+   Handle text that includes mixed-case letters, numbers, and punctuation. Remove all of the non-alphabetic characters so that the three functions treat the text as one giant string of letters.
+
+4. ***1337 H@cker***:  
+   Combine the three redundant functions into one master function.
+   - Right now the program uses three separate functions to calculate single letter frequencies, digrams, and trigrams.
+   - Analyze these three functions and figure out how to write a single function that will calculate the frequency of any length n-gram.
+   - Pass the desired n-gram length as a parameter to this function.
+
+5. ***BONUS***:  
+   Print the output to the console window starting with the most common n-gram and continuing with the full top-10 results in decreasing order. Do not print anything beyond the top-10 reuslts.
 
 ## AI Restrictions ##
 Students are allowed to use AI LLMs such as ChatGPT to lookup basic features and examples within the programming language. For example, somebody might ask AI how to read a text file. The AI would most likely respond by explaining how to use functions like `read` (for Python) or `ReadTextFile` for C#.
