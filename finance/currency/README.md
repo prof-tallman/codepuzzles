@@ -97,4 +97,4 @@ Available rates (per 1 USD):
 ## Resources ##
 Two resources will come in handy for this project:
 - [ISO 4217 currency codes](https://en.wikipedia.org/wiki/ISO_4217) (for 3-letter codes)
-- Sample [rates.txt](https://github.com/prof-tallman/codepuzzles/tree/main/finance/currency_exchange/rates.txt) file. Copy locally for stages 2-3 but change your program to download the file directly from the server for stage 4.
+- Sample [rates.txt](https://raw.githubusercontent.com/prof-tallman/codepuzzles/refs/heads/main/finance/currency/rates.txt) file. Copy locally for stages 2-3 but change your program to download the file directly from the server for stage 4.
