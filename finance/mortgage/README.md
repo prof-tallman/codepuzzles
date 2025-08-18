@@ -1,4 +1,4 @@
-# Save Me The Money Amortization Table #
+# Mortgage Calculator #
 Create a program that calculates and displays an amortization table for a loan.
 
 ## Rankings ##
