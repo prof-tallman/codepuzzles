@@ -68,7 +68,7 @@ user@computer:~$ mcalc ()
 
 ## Resources ##
 Students are invited to use one of these versions of the Periodic Table.
-1. Periodic Table (full table as of #####)
-2. Periodic Table (simp[lified table contianing only single-letter elements])
+1. [Periodic Table](https://github.com/prof-tallman/codepuzzles/blob/main/science/periodic_table/periodic_table.txt) (the full table as of December 2024)
+2. [Periodic Table Singletons](https://github.com/prof-tallman/codepuzzles/blob/main/science/periodic_table/periodic_table_singletons.txt) (a simplified version of the table contianing only single-letter elements)
 
 In addition, a sample molecule cache file is included here.
