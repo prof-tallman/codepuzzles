@@ -1,5 +1,5 @@
 # Top Gear #
-Build a Raspberry Pi–based device that rides in a car, collections motion data, and provides the driver with a trip report. This device will be based data collected from an onboard accelerometer and gyroscope.
+Build a portable motion-sensing device that rides in a car, records data from its motion sensors, and generates a simple trip report for the driver. This device can run a Raspberry Pi and incorporates sensors such as an accelerometer and gyroscope.
 
 **WARNING: This project has not been tested yet and is subject to change.**
 
@@ -8,39 +8,45 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 1. ***AI Does My HW***:  
    Read values from the accelerometer and gyroscope sensors.
-   - Connect the accelerometer and gyroscope sensors.
-   - Install and configure Raspberry Pi OS.
-   - Write functions that collect data from the two sensors.
-   - Print out the first 10 sets of readings in a readable format.
+   - Connect the accelerometer and gyroscope sensors to the Raspberry Pi.
+   - Install and configure the Raspberry Pi software.
+   - Write functions to collect data from the two motion sensors.
+   - Create a simple test that prints the first 10 sets of readings.
 
 2. ***Script Kiddie***:  
-   Record driving dynamics to a CSV file.
-   - Choose a name for the logfile that is based on the date and time so that multiple runs do not overwrite the original file.
-   - Log timestamped acceleration and rotation readings once per second.
-   - Store the result in a CSV file with header: datetime, ax, ay, az, gx, gy, gz.
+   Record the driving motion to a log file.
+   - Instead of printing the sensor readings to the screen, save them to a log file.
+   - The name of the logfile should be based on the current date and time to avoid name collisions.
+   - Collect a new measurement from the two sensors every second.
+   - Each line should contain a timestamp in addition to the accelerometer and gyroscope readings.
+   - Store the result in a text file using the column headers: `datetime`, `ax`, `ay`, `az`, `gx`, `gy`, `gz`.
    - After 30 seconds of logging, stop and close the file.
 
-3. ***Professional***:  
+4. ***Professional***:  
    Create a second program that computes summary statistics from a recorded trip.
-   - Second program can run on the Raspberry Pi or any other computer.
-   - Read the CSV file into the second program that stores the data as a list of tuples.
-   - Calculate:
+   - This second program reads the log files created by the first program.
+   - The second program can run on the Raspberry Pi sensor or on another computer; it just needs a log file.
+   - Read every line from log file and store the data as a list of tuples.
+   - From the data (e.g., the list of tuples), calculate:
      - Maximum forward acceleration (m/s²)
      - Maximum braking deceleration (m/s²)
      - Maximum lateral acceleration (cornering force, m/s²)
      - Maximum yaw rate (deg/s)
    - Print results with clear labels.
-   Take a few test runs in a car and review the results. Choose threshold values that differentiate between 'grandma' driving, 'normal' driving, and 'insane' driving.
-   - Print a snarky editorial comment at the end of each ride.
+   Rate the driver based on the measurements.
+   - Take a few test runs in a car and review the results.
+   - Try driving slow-and-steady, medium, and then fast-jerky.
+   - Based on the readings, choose threshold values that differentiate between 'grandma' driving, 'normal' driving, and 'insane' driving.
+   - The program should print snarky comments based on these categories.
 
-4. ***1337 H@cker***:  
-   Plot driving dynamics from a trip.
-   - Increase the samplping rate to 10 Hz.
-   - Use a graphing library to plot forward acceleration, lateral acceleration, and yaw rate vs time.
-   - Label axes and add a title.
+6. ***1337 H@cker***:  
+   Plot the driving motion from each trip.
+   - Increase the samplping rate from 1 Hz to 10 Hz.
+   - Use a graphing library to creat three plots: forward acceleration, lateral acceleration, and yaw rate vs time.
+   - Label the axes and add a title.
    - Save the figure as `topgear.png`.
 
-5. ***BONUS***:  
+7. ***BONUS***:  
    Incorporate an additional sensor with the Raspberry Pi device. Examples:
    - Use a magnetometer to show heading changes during the trip.
    - Use the barometer to estimate elevation change while driving.
@@ -48,10 +54,10 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 ## Constraints ##
 A few constraints to keep in mind:
-- Sampling rate: 1 Hz (once per second) for initial stages.
+- Sampling rate: 1 Hz (once per second) for initial stages and 10 Hz later on.
 - All statistics for stages 1–3 must be calculated manually with loops.
-- CSV files must be human-readable and neatly formatted.
-- All plots must be clear, labeled, and uncluttered.
+- Log files must be human-readable and neatly formatted.
+- The plots must be clear, labeled, and uncluttered.
 - Errors should be detected and handled gracefully.
 
 ## Examples ##
@@ -76,4 +82,4 @@ Trip statistics:
 ```
 
 ## Resources ##
-Datasheets for Raspberry Pi sensors will be coming soon.
+Datasheets for the Raspberry Pi sensors will be coming soon.
