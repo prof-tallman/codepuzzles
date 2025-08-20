@@ -1,5 +1,5 @@
 # Fibonacci Generator #
-The Fibonacci Sequence is a series of numbers starting at 1 and 1. The next number in the sequence is the sum of the two previous numbers. For example, $1+1=2$, which goes on to $1+2=3$, then $2+3=5$ and so on. The first ten numbers in the Fibonacci Sequence are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55. The sequence starts small but gets big quickly. The Fibonacci Sequence is particularly interesting because it is commonly found in nature and has artistic applications.
+The Fibonacci Sequence is an infinite series of numbers starting at 1. Well, it actually starts with two numbers, 1 and 1. The next number in the sequence is the sum of the two previous numbers. For example, $1+1=2$, which goes on to $1+2=3$, then $2+3=5$ and so on. The first ten numbers in the Fibonacci Sequence are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55. The sequence starts small but gets big quickly. The Fibonacci Sequence is particularly interesting because it is commonly found in nature and has artistic applications.
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
