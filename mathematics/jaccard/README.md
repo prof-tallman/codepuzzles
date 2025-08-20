@@ -3,7 +3,7 @@ Compute how similar two texts are using the Jaccard Index (also known as the Jac
 
 The Jaccard Index measures the overlap between two sets. It is given by the equation $\dfrac{|A \cap B|}{|A \cup B|}$.
 
-For example, if set #1 is {A, B, F, H, T, Y} and set #2 is {B, C, F, G, S, Y}, then the intersection is {B, F, Y} (3 elements) and the union is {A, B, C, F, G, H, S, T, Y} (9 elements). So $J=\frac{3}{9}=0.333$.
+For example, if set #1 is {A, B, F, H, T, Y} and set #2 is {B, C, F, G, S, Y}, then the intersection is {B, F, Y} (3 elements) and the union is {A, B, C, F, G, H, S, T, Y} (9 elements). So $J=\dfrac{3}{9}=0.333$.
 
 In this project, take two inputs and turn them into sets (characters, words, or n-grams) to calculate their Jaccard similarity. Add flags to control how the sets are built and how results are displayed.
 
