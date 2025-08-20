@@ -20,7 +20,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 2. ***Script Kiddie***:
    Let the user supply the inputs and choose how sets are built.
-   - Read two inputs from the command line, e.g. `python jaccard.py "abc efg" "bcd-fgh"`. Notice that the command line parameters are quoted, since they contain spaces other symbols. Also, the spaces and symbols are not special; they are treated like any other letter.
+   - Read two inputs from the command line, e.g. `python jaccard.py "abc efg" "bcd-fgh"`. Notice that the command line parameters are quoted, since they contain spaces and other symbols. Also, the spaces and symbols are not special; they are treated like any other letter.
    - Add two flags, `--chars` and `--words`, that changes between:
      - `--chars`: calculate the Jaccard Index using a set of distinct characters (this is the default if neither flag is provided).
      - `--words`: calculate the Jaccard Index using a set of distinct words that are split on whitespace.
@@ -33,11 +33,10 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    - Add `--explain` to print: |A|, |B|, |A∩B|, |A∪B|, and a sorted list (or capped count) of the intersection and union elements.
 
 4. ***1337 H@cker***:
-   Scale up: compare multiple documents and report the most similar pair(s).
-   - Accept `--files file1 file2 ... fileK` to read K ≥ 2 text files instead of two strings. If the `--files` flag parameter is used, the program will treat all string input as a filename.
+   Compare the contents of two files by calculating their Jaccard Index.
+   - If the two input parameters happen to be filenames, use the contents of the file as the input data.
    - Build sets for each file using the same flags as above (`--chars`, `--words`, `--ngrams N`, `--explain`).
-   - Compute the pairwise Jaccard similarity for all possible file pairs.
-   - Handle file errors gracefully (e.g., if a file is missing, or unreadable, or empty).
+   - Handle any and all errors gracefully.
 
 5. ***BONUS***:
    Add a brute-force directory mode using a new command line flag `--dir PATH` that reads all of the `*.txt` files in a directory and creates a top-3 report for the files that are most-similar and also the files that are least-similar.
@@ -53,30 +52,6 @@ Additional assumptions and constraints are listed below.
 - If any set is empty, define $J=0.0$.
 - Round all printed numbers to 3 decimals.
 - Use clear, actionable error messages and exit codes for invalid arguments.
-
-## Examples ##
-Here are a few sample runs for the final program.
-```
-user@computer:~$ python jaccard.py "red the fox" "the fox is red" --words
-0.750
-
-user@computer:~$ python jaccard.py --files --words doc1.txt doc2.txt doc3.txt
-Pairwise Jaccard (words):
-doc1.txt vs doc2.txt: 0.612
-doc1.txt vs doc3.txt: 0.427
-doc2.txt vs doc3.txt: 0.398
-
-user@computer:~$ python jaccard.py "ABFHTY" "BCFGSY"
-0.333
-
-user@computer:~$ python jaccard.py --explain "ABFHTY" "BCFGSY"
-|A| = 6
-|B| = 6
-|A ∩ B| = 3
-|A ∪ B| = 9
-Intersection A ∩ B: [ 'B', 'F', 'Y' ]
-Union A ∪ B:        [ 'A', 'B', 'C', 'F', 'G', 'H', 'S', 'T', 'Y' ]
-```
 
 ## Resources ##
 Several resources will help students complete this project:
