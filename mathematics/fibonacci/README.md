@@ -1,5 +1,5 @@
 # Fibonacci Generator #
-The Fibonacci Sequence is an infinite series of numbers starting at 1. Well, it actually starts with two numbers, 1 and 1. The next number in the sequence is the sum of the two previous numbers. For example, $1+1=2$, which goes on to $1+2=3$, then $2+3=5$ and so on. The first ten numbers in the Fibonacci Sequence are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55. The sequence starts small but gets big quickly. The Fibonacci Sequence is particularly interesting because it is commonly found in nature and has artistic applications.
+The Fibonacci Sequence is an infinite series of numbers starting at 1. Well, it actually begins with *two* values, both 1 and 1. The next number in the sequence is the sum of the two previous. For example, the third number in the sequence is $2$ since $1+1=2$; then it goes on to $1+2=3$, $2+3=5$, and so on. The first ten values in the Fibonacci Sequence are 1, 1, 2, 3, 5, 8, 13, 21, 34, 55. The sequence starts small but gets big quickly. The Fibonacci Sequence is particularly interesting because it is commonly found in nature and has artistic applications.
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
@@ -17,7 +17,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 3. ***Professional***:  
    Add a verbose mode and make the Fibonacci generator more memory-efficient when possible.
-   - Accept a `-v` or `--verbose` command line flag to control output.
+   - Accept a flag `-v` or `--verbose` command line flag to control output.
    - Without `--verbose`, print only the nth Fibonacci number.
    - With `--verbose`, print the entire sequence up to $n$.
    - Use two different functions:
@@ -26,8 +26,10 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 4. ***1337 H@cker***:  
    Add a recursive option and make the program bulletproof against bad input.
-   - Accept a `-r` or `--recursive` flag to calculate the sequence using a **recursive** formula.
+   - Accept the `-r` / `--recursive` flag to calculate the sequence using a **recursive** formula.
+   - Prevent the `--recursive` and `-verbose` flags from being used simultaneously.
    - The program should now have three different Fibonacci functions (list-returning, memory-efficient iterative, and recursive).
+   - All three functions should produce the same value for the requested Fibonacci element $n$
    - Perform error checking on the argument $n$ to make sure that it is valid. If the $n$ is unacceptable, quit gracefully with an error message explaining why the value of $n$ does not work so that other computer science students will understand.
 
 5. ***BONUS***:
