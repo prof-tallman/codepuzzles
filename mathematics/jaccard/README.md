@@ -14,9 +14,9 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    Compute Jaccard similarity for two short strings using distinct characters only.
    - Write a function `jaccard_chars(a, b)` that:
      - Converts each input string `a` and `b` to a set of characters.
-     - Returns the Jaccard coefficient as a float $\frac{|A \cap B|}{|A \cup B|}$
+     - Returns the Jaccard coefficient as a float $\dfrac{|A \cap B|}{|A \cup B|}$
      - In `main`, call the function with two hardcoded test strings (letters only; no spaces/punctuation) and print the similarity rounded to 3 decimals.
-     - If either set is empty, define $J=0.0$.
+     - If either set is empty, define J=0.0.
 
 2. ***Script Kiddie***:
    Let the user supply the inputs and choose how sets are built.
