@@ -24,29 +24,88 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 1. ***AI Does My HW***:  
    Multiply two hardcoded matrices and print the result.
    - Write a function `matrix_multiply(a, b)` that:
-     - Accepts two matrices represented as lists of lists.
+     - Accepts two matrices, represented as lists of lists.
      - Returns a new matrix containing the result of multiplying $a \times b$.
    - In main, call this function with two hardcoded matrices that meet the multiplication dimension requirement.
    - Print the resulting matrix in a readable format (rows on separate lines).
+  ```
+  user@computer:~$ python matrix.py
+  [58, 64]
+  [139, 154]
+  ```
 
 2. ***Script Kiddie***:  
-   Let the user enter the matrix values.
+   Instead of hardcoding the matrices, let the user enter the matrix values. For instance, you might:
    - Ask the user for the dimensions of each matrix ($m \times n$ and $n \times k$).
    - Prompt for the values of each matrix row by row.
-   - Validate that the first matrix's column count matches the second matrix's row count; if not, print an error and quit gracefully.
-   - Print the result in a clean, labeled format.
+   Validate that the first matrix's column count matches the second matrix's row count; if not, print an error and quit gracefully.
+   ```
+   user@computer:~$ python matrix.py
+   Enter number of rows for matrix A (m): 2
+   Enter number of columns for matrix A (n): 3
+   Matrix A: Enter the values for each row separated by spaces (e.g., '3 5 4')
+   Row 1: 1 2 3
+   Row 2: 4 5 6
+   Enter number of rows for matrix B (must equal n): 3 
+   Enter number of columns for matrix B (k): 2
+   Matrix B: Enter the values for each row separated by spaces (e.g., '3 5 4')
+   Row 1: 7 8
+   Row 2: 9 10
+   Row 3: 11 12
+   [58.0, 64.0]
+   [139.0, 154.0]
+   ```
 
 3. ***Professional***:  
-   Load matrices from files.
-   - Accept two filenames as command line arguments; read each file into a matrix (rows separated by newlines, values separated by spaces or commas).
-   - Validate that the files contain numeric data and that dimensions match the multiplication rule.
+   Load the matrices from two text files.
+   - Accept two filenames as command line arguments
+   - Read each file into a matrix (rows separated by newlines, values separated by spaces).
+   - Ignore any lines that begin with the hashtag character `#`
+   - Validate that the files both contain numeric data and that dimensions match the multiplication rule.
+   ```
+   user@computer:~$ cat matrix1.txt
+   # 2x3 matrix
+   1 2 3
+   4 5 6
+   user@computer:~$ cat matrix2.txt
+   # 3x2 matrix
+   7 8
+   9 10
+   11 12
+   user@computer:~$ python matrix.py matrix1.txt matrix2.txt
+   [58.0, 64.0]
+   [139.0, 154.0]
+   ```
 
 4. ***1337 H@cker***:  
-   Create two new options that improve the user experienc.
-   - Add an optional `--pretty` flag to format output in aligned columns.
-   - Add an optional `--transpose` flag to automatically transpose the second matrix before multiplication. What this means is that the program will be able to multiple matrices with dimensions $m \times n$ and $k \times n$ if, and only if, the `--transpose` flag is used (because it will convert the second matrix to a new matrix of dimension $n \times k$).
+   Add an optional `--transpose` flag to automatically transpose the second matrix before multiplication.
+   - What this means is that the program will be able to multiple matrices with dimensions $m \times n$ and $k \times n$ if, and only if, the `--transpose` flag is used (because it will convert the second matrix to a new matrix of dimension $n \times k$).
+   Pretty print the results so that the values in each matrix column are aligned.
+   - If the resulting values are all whole numbers, print the results as integers that are right aligned.
+   - If the resulting values contain a decimal number, round all the results to three decimal points and right align the numbers.
+   ```
+   user@computer:~$ cat matrix1.txt
+   # 2x3 matrix
+   1 2 3
+   4 5 6
+   user@computer:~$ cat matrix2.txt
+   # 3x2 matrix
+   7 8
+   9 10
+   11 12
+   user@computer:~$ python matrix.py matrix1.txt matrix2.txt
+             58             64
+            139            154
+   user@computer:~$ cat matrix3.txt
+   # matrix to transpose
+   7 9 11
+   8 10 12.5
+   user@computer:~$ python matrix.py matrix1.txt matrix3.txt --transpose
+         58.000         65.500
+        139.000        157.000
+   ```
 
-5. ***BONUS***:  
+6. ***BONUS***:  
    Add advanced benchmarking functionality and performance checks.
    - Implement a `--random m n k min max` option that:
      - Generates an $m \times n$ matrix and an $n \times k$ matrix.
