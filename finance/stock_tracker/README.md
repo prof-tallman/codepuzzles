@@ -40,7 +40,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 4. ***Professional***:  
    Generate a trading summary to help understand recent market activity.
-   - Print the start and end timestamp for the measurements.
+   - Print the start and end timestamp for the dataset.
    - Using the most recent 10 calendar days found in the file:
      - Sum the total share volume (`Volume`) over those days.
      - Compute total dollar volume by summing `Price × Volume` for each row.
