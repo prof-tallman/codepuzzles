@@ -65,7 +65,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    Plot a graph that shows the price over the time period contained in the file.
    - Add a descriptive title with the ticker symbol and date range, and label axes (time vs. price in USD).
    - Let the graphing library auto-scale axes; avoid clutter (no 3D, no unnecessary gridlines).
-   - Save the plot as `price.png` in the current directory.
+   - Save the plot as `stockprice.png` in the current directory.
 
 6. ***BONUS***:  
    Predict the price trend for the next day using linear regression.
