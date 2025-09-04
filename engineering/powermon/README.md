@@ -63,7 +63,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    - Avoid cluttering the graph with unnecessary features
    - Save the plot as poweroutput.png in the current directory
    - Display the graph to the screen.
-   ![Graph of solar power output in kWh](poweroutput.png)
+![Graph of solar power output in kWh](poweroutput.png)
 
 5. ***BONUS***:  
    Predicts the power output for the next week using linear regression.
