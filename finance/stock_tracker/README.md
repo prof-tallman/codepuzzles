@@ -96,32 +96,5 @@ This project has a number of important details that must be followed.
 - Output should be human-readable, show units, and be neatly aligned.
 - Use a common plotting library for graphics (e.g., Matplotlib); do not use additional analysis libraries.
 
-## Examples ##
-```
-user@computer:~$ python stocks.py
-2025-04-01 09:30 -> $174.12, Vol 128,450
-2025-04-01 09:45 -> $174.65, Vol 96,210
-2025-04-01 10:00 -> $174.22, Vol 84,005
-2025-04-01 10:15 -> $175.10, Vol 110,392
-2025-04-01 10:30 -> $175.48, Vol 89,771
-
-user@computer:~$ python stocks.py
-Price statistics:
-Min:    $168.03
-Max:    $177.92
-Mean:   $173.46
-Range:  $9.89
-
-user@computer:~$ python stocks.py prices.csv
-Price data from 2025-04-01 09:30 to 2025-04-19 16:00
-  Min:    $168.03
-  Max:    $177.92
-  Mean:   $173.46
-  Range:  $9.89
-Last 10 days:
-  Total volume:      42,318,955 shares
-  Total $ volume:    $7,321,445,812
-Current price is $175.12 and increasing at $2.40 per hour
-```
-
 ## Resources ##
+There are no additional resources needed to complete this project.
