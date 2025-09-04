@@ -38,7 +38,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    Range:  $9.89
    ```
 
-4. ***Professional***:  
+3. ***Professional***:  
    Generate a trading summary to help understand recent market activity.
    - Print the start and end timestamp for the dataset.
    - Using the most recent 10 calendar days found in the file:
@@ -61,13 +61,15 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    Current price is $175.12 and increasing at $2.40 per hour
    ```
 
-5. ***1337 H@cker***:  
+4. ***1337 H@cker***:  
    Plot a graph that shows the price over the time period contained in the file.
    - Add a descriptive title with the ticker symbol and date range, and label axes (time vs. price in USD).
    - Let the graphing library auto-scale axes; avoid clutter (no 3D, no unnecessary gridlines).
    - Save the plot as `stockprice.png` in the current directory.
+     
+![Graph of stock price over time in USD](stockprice.png)
 
-6. ***BONUS***:  
+5. ***BONUS***:  
    Predict the price trend for the next day using linear regression.
    - Manually compute a best-fit line $y = m \times x + b$ for the last N data points (choose N, e.g., the last 2–3 days of bars).
    - Plot the regression line and extend it one trading day into the future (same bar spacing as the CSV).
