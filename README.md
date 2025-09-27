@@ -1,2 +1,2 @@
 # codepuzzles
-A fun collection of puzzles to challenge coders
+A fun selection of puzzles to challenge new coders. Many of these projects are assigned to my undergraduate students.
