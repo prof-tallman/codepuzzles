@@ -1,9 +1,9 @@
 # Password Complexity Checker #
 Determine if a password fulfills a set of complexity requirements.
 
-Passwords are used to authenticate a person based on some secret information that they have memorized. An adversary who knows a victim's passwrd can impersonate the victim and gain access to the protected resource. So it is important to choose strong passwords that cannot be easily guessed. To help enforce strong passwords, many programs require a certain level of password complexity. Passwords that do not meet the complexity requirements are not allowed.
+Passwords are used to authenticate a person based on some secret information that they have memorized. An adversary who knows a victim's password can impersonate the victim and gain access to the protected resource. So it is important to choose strong passwords that cannot be easily guessed. To help enforce strong passwords, many programs require a certain level of password complexity. Passwords that do not meet the complexity requirements are not allowed.
 
-Note: This project is a fun challenge but the program will not adequatly protect the user's input. Do not type in the real password for any bank account, school account, or other important resource.
+Note: This project is a fun challenge but the program will not adequately protect the user's input. Do not type in the real password for any bank account, school account, or other important resource.
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
@@ -14,20 +14,20 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    - Call this function with a few hardcoded sample passwords. Some passwords should meet the complexity requirements and others should purposely fail. Remember, it is a good thing for simple passwords to fail the complexity check.
    ```
    user@computer:~$ python pwdfilter.py
-   aaaBBB111           : GOOD (expected pass really passed)
-   pAssw0rd            : GOOD (expected pass really passed)
-   1reallyLONGpassword : GOOD (expected pass really passed)
-   1tW0rks!            : GOOD (expected pass really passed)
-   Short1              : GOOD (expected failure really failed)
-   lowercase           : GOOD (expected failure really failed)
-   UPPERCASE           : GOOD (expected failure really failed)
-   NoNumber            : GOOD (expected failure really failed)
+   aaaBBB111           : PASS (as expected)
+   pAssw0rd            : PASS (as expected)
+   1reallyLONGpassword : PASS (as expected)
+   1tW0rks!            : PASS (as expected)
+   Short1              : FAIL (as expected)
+   lowercase           : FAIL (as expected)
+   UPPERCASE           : FAIL (as expected)
+   NoNumber            : FAIL (as expected)
    ```
 
 2. ***Script Kiddie***:  
    Hide the password on the screen so that eavesdroppers cannot read it.
    - Replace the hardcoded passwords with a user prompt. When the user types their password, it will show on the screen (oops)!
-   - Instead of using the `input` function, use the `getpass` module to mask the letters typed by the user (you'll have to research `getpass`)
+   - Instead of using the a regular input function, use a module like `getpass` to hide or mask the letters typed by the user (you'll have to research `getpass` or some other equivalent)
    - In addition to the three previous character classes, also require the password to include a symbol like !@#$%^&*().
    - Note: in the example below, the user's input was hidden by the `getpass` module.
    ```
@@ -54,7 +54,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
    user@computer:~$ python pwdfilter.py
    Password: (the user typed '123qwe!@#' but the text was hidden)
-   Error: Password must contain an upper-case letter
+   Error: Password must contain an uppercase letter
 
    user@computer:~$ python pwdfilter.py
    Password: (the user typed '123' but the text was hidden)
@@ -65,6 +65,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    Password meets complexity requirements
    
    user@computer:~$ cat pwdhistory.txt
+   pAssw0rd
    1reAllyLoNGpaSsw0rd
    1tW0rks!
    tr0ubl3$
@@ -81,7 +82,11 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    ```
    user@computer:~$ python pwdfilter.py
    Password: (the user typed 'Password123!' but the text was hidden)   
-   Error: Password contains more than 3 lower-case characters in a row
+   Error: Password contains more than 3 lowercase characters in a row
+
+   user@computer:~$ python pwdfilter.py
+   Password: (the user typed 'Pas1!Pas1!!' but the text was hidden)   
+   Password meets complexity requirements
    ```
 
 5. ***BONUS***:  
@@ -90,7 +95,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 ## AI Restrictions ##
 Students are allowed to use AI LLMs such as ChatGPT to lookup basic features and examples within the programming language. For example, somebody might ask AI how to find the length of a string. If the program was being written in C, the AI would likely mention the `strlen()` function. On the other hand, if the programming language was Python, then the AI would almost certainly explain how to use the built-in `len()` function.
 
-However, students are prohibited from giving the AI with any information about the project. If the AI guesses the context of the assignment and provides sample code, please try to ignore this information. Basically, studnets may use AI as a nice interface to the official documentation but may not use AI to write any of the project.
+However, students are prohibited from giving the AI with any information about the project. If the AI guesses the context of the assignment and provides sample code, please try to ignore this information. Basically, students may use AI as a nice interface to the official documentation but may not use AI to write any of the project.
 
 ## Constraints ##
 Additional assumptions and constraints are listed below.
