@@ -34,6 +34,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    user@computer:~$ python pwdfilter.py
    Password: (the user typed '123qweASD' but the text was hidden)
    Oops, that password does not pass the complexity requirements
+   
    user@computer:~$ python pwdfilter.py
    Password: (the user typed '123qweASD@' but the text was hidden)
    Congratulations, your password is sufficiently complex
