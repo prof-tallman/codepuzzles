@@ -50,7 +50,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    55
    
    user@computer:~$ python fib.py 100
-   354224848179261915075
+   354,224,848,179,261,915,075
    
    user@computer:~$ python fib.py 5 --verbose
    1
@@ -63,7 +63,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 4. ***1337 H@cker***:  
    Add a recursive option and make the program bulletproof against bad input.
    - Accept the `-r` / `--recursive` flag to calculate the sequence using a **recursive** formula.
-   - Prevent the `--recursive` and `-verbose` flags from being used simultaneously.
+   - Prevent the `--recursive` and `--verbose` flags from being used simultaneously.
    - The program should now have three different Fibonacci functions (list-returning, memory-efficient iterative, and recursive).
    - All three functions should produce the same value for the requested Fibonacci element $n$
    - Perform error checking on the argument $n$ to make sure that it is valid. If the $n$ is unacceptable, quit gracefully with an error message explaining why the value of $n$ does not work so that other computer science students will understand.
@@ -87,12 +87,12 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    ```
 
 5. ***BONUS***:
-   Use a simple drawing library to generate a picture that illustrates the Fibonacci Sequence up to degree $n$. For example, draw a sprial where each square's side length matches a Fibonacci number.
+   Use a simple drawing library to generate a picture that illustrates the Fibonacci Sequence up to degree $n$. For example, draw a spiral where each square's side length matches a Fibonacci number.
 
 ## AI Restrictions ##
-Students are allowed to use AI LLMs such as ChatGPT to lookup basic features and examples within the programming language. For example, somebody might ask AI how to convert from a string to a number. Most AIs would point the person towards the `int` function in python or the `Int.Parse` function in C#.
+Students are allowed to use AI LLMs such as ChatGPT to lookup basic features and examples within the programming language. For example, somebody might ask AI how to convert from a string to a number. Most AIs would point the person towards the `int()` function in python or the `Int.Parse()` function in C#.
 
-However, students are prohibited from giving the AI with any information about the project. If the AI guesses the context of the assignment and provides sample code, please try to ignore this information. Basically, students may use AI as a nice interface to the official documentation but may not use AI to write any of the project.
+However, students are prohibited from providing the AI with any information about the project. If the AI guesses the context of the assignment and provides sample code, please try to ignore this information. Basically, students may use AI as a nice interface to the official documentation but may not use AI to write any of the project.
 
 ## Constraints ##
 None at this time.
