@@ -27,7 +27,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 2. ***Script Kiddie***:  
    Hide the password on the screen so that eavesdroppers cannot read it.
    - Replace the hardcoded passwords with a user prompt. When the user types their password, it will show on the screen (oops)!
-   - Instead of using the a regular input function, use a module like `getpass` to hide or mask the letters typed by the user (you'll have to research `getpass` or some other equivalent)
+   - Instead of using the regular input function, use a module like `getpass` to hide or mask the letters typed by the user (you'll have to research `getpass` or some other equivalent)
    - In addition to the three previous character classes, also require the password to include a symbol like !@#$%^&*().
    - Note: in the example below, the user's input was hidden by the `getpass` module.
    ```
@@ -45,12 +45,12 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    - Keep track of the last five passwords in a text file.
    - If the current password is contained in the text file, reject it as an unsafe password.
    - Seed the history file with five passwords.
-   - Every time that a new password is entered, it is added to the top of the list and the last password on the list is removed.
+   - Every time that a new password meets the complexity requirements, it is added to the history file and the oldest password on the list is removed.
    - If the password is ever rejected, explain to the user what is wrong with it. Use custom exception messages, but exit gracefully. If there are multiple problems with a password, pointing out one of the problems is sufficient.
    ```
    user@computer:~$ python pwdfilter.py
    Password: (the user typed '123qweASD' but the text was hidden)
-   Error: Password must contain a symbol '!@#$%^&*()[]-_=+,./<>?;:'"'
+   Error: Password must contain a symbol '!@#$%^&*()'
 
    user@computer:~$ python pwdfilter.py
    Password: (the user typed '123qwe!@#' but the text was hidden)
@@ -93,13 +93,13 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    Prevent adversaries from stealing passwords that are in the history file by encrypting each password. The passwords may be encrypted with a cryptographic hash or a simple encryption algorithm. Import an existing algorithm, do not copy or create one from scratch.
 
 ## AI Restrictions ##
-Students are allowed to use AI LLMs such as ChatGPT to lookup basic features and examples within the programming language. For example, somebody might ask AI how to find the length of a string. If the program was being written in C, the AI would likely mention the `strlen()` function. On the other hand, if the programming language was Python, then the AI would almost certainly explain how to use the built-in `len()` function.
+Students are allowed to use AI LLMs such as ChatGPT to look up basic features and examples within the programming language. For example, somebody might ask AI how to find the length of a string. If the program was being written in C, the AI would likely mention the `strlen()` function. On the other hand, if the programming language was Python, then the AI would almost certainly explain how to use the built-in `len()` function.
 
-However, students are prohibited from giving the AI with any information about the project. If the AI guesses the context of the assignment and provides sample code, please try to ignore this information. Basically, students may use AI as a nice interface to the official documentation but may not use AI to write any of the project.
+However, students are prohibited from providing the AI with any information about the project. If the AI guesses the context of the assignment and provides sample code, please try to ignore this information. Basically, students may use AI as a nice interface to the official documentation but may not use AI to write any of the project.
 
 ## Constraints ##
 Additional assumptions and constraints are listed below.
-* Restrict all passwords to English characters, including numbers and punctuations. Passwords can be written in any language and some password algorithms even allow for non-printable characters. But this puzzle should be solved for English characters only.
+* Restrict all passwords to English characters, including numbers and punctuation. Passwords can be written in any language and some password algorithms even allow for non-printable characters. But this puzzle should be solved for English characters only.
 
 ## Resources ##
 Additional resources are not necessary to complete this project.
