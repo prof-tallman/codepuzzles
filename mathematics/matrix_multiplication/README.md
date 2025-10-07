@@ -58,20 +58,22 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 3. ***Professional***:  
    Load the matrices from two text files.
-   - Accept two filenames as command line arguments
+   - Accept two filenames as command line arguments.
    - Read each file into a matrix (rows separated by newlines, values separated by spaces).
-   - Ignore any lines that begin with the hashtag character `#`
+   - Ignore any lines that begin with the hashtag character `#`.
    - Validate that the files both contain numeric data and that dimensions match the multiplication rule.
    ```
    user@computer:~$ cat matrix1.txt
    # 2x3 matrix
    1 2 3
    4 5 6
+   
    user@computer:~$ cat matrix2.txt
    # 3x2 matrix
    7 8
    9 10
    11 12
+   
    user@computer:~$ python matrix.py matrix1.txt matrix2.txt
    [58.0, 64.0]
    [139.0, 154.0]
@@ -79,8 +81,9 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 4. ***1337 H@cker***:  
    Add an optional `--transpose` flag to automatically transpose the second matrix before multiplication.
-   - What this means is that the program will be able to multiple matrices with dimensions $m \times n$ and $k \times n$ if, and only if, the `--transpose` flag is used (because it will convert the second matrix to a new matrix of dimension $n \times k$).
-   Pretty print the results so that the values in each matrix column are aligned.
+   - What this means is that the program will be able to multiply matrices with dimensions $m \times n$ and $k \times n$ if, and only if, the `--transpose` flag is used (because it will convert the second matrix to a new matrix of dimension $n \times k$).
+   - Without `--transpose`, dimensions must be $m \times n$ and $n \times k$.
+   Always pretty print the results so that the values in each matrix column are aligned.
    - If the resulting values are all whole numbers, print the results as integers that are right aligned.
    - If the resulting values contain a decimal number, round all the results to three decimal points and right align the numbers.
    ```
@@ -88,24 +91,28 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    # 2x3 matrix
    1 2 3
    4 5 6
+   
    user@computer:~$ cat matrix2.txt
    # 3x2 matrix
    7 8
    9 10
    11 12
+   
    user@computer:~$ python matrix.py matrix1.txt matrix2.txt
              58             64
             139            154
+   
    user@computer:~$ cat matrix3.txt
    # matrix to transpose
    7 9 11
    8 10 12.5
+   
    user@computer:~$ python matrix.py matrix1.txt matrix3.txt --transpose
          58.000         65.500
         139.000        157.000
    ```
 
-6. ***BONUS***:  
+5. ***BONUS***:  
    Add advanced benchmarking functionality and performance checks.
    - Implement a `--random m n k min max` option that:
      - Generates an $m \times n$ matrix and an $n \times k$ matrix.
@@ -120,39 +127,11 @@ However, students are prohibited from giving the AI any information about the pr
 
 ## Constraints ##
 Additional assumptions and constraints are listed below:
-- Matrix multiplication modules such as Python's Numpy, the C# Matrix class, and Java's EJML are prohibited. Students must manually perform all indexing and multiplication. 
+- Matrix multiplication modules such as Python's NumPy, the C# Matrix class, and Java's EJML are prohibited. Students must manually perform all indexing and multiplication. 
 - Only numeric data is supported (integers or floats).
-- Round floating-point results to 3 decimals when printing.
+- When pretty printing, round floating-point results to 3 decimals.
 - Validate all inputs (user or file) and provide helpful error messages.
 - Large random matrices may take noticeable time to compute, so handle with care.
-
-## Examples ##
-The first example is for the "AI Does My Homework" stage and uses an internal, hardcoded matrix. The second example is for the "Script Kiddie" which prompts the user to dynamically enter their own matrix.
-```
-user@computer:~$ python matrix.py
-[58, 64]
-[139, 154]
-
-user@computer:~$ python matrix.py
-Enter rows and columns for first matrix: 2 3
-Enter first matrix row 1: 1 2 3
-Enter first matrix row 2: 4 5 6
-Enter rows and columns for second matrix: 3 2
-Enter second matrix row 1: 7 8
-Enter second matrix row 2: 9 10
-Enter second matrix row 3: 11 12
-Result:
-[58, 64]
-[139, 154]
-
-user@computer:~$ python matrix.py matrix1.txt matrix2.txt
-[58, 64]
-[139, 154]
-
-user@computer:~$ python matrix.py matrix1.txt matrix2.txt --pretty
-  58   64
- 139  154
-```
 
 ## Resources ##
 Additional resources are not required for this project.
