@@ -1,5 +1,5 @@
 # Stock Trader #
-Analyze a three-week dataset [stocks.csv](https://github.com/prof-tallman/codepuzzles/tree/main/finance/stock_tracker/stocks.csv) of stock price bars from a single ticker (e.g., 15-minute closes) in a CSV file. Parse and process the data to calculate summary statistics, generate a report, and create a plot.
+Analyze a three-week dataset [stocks.csv](stocks.csv) of stock price bars from a single ticker (e.g., 15-minute closes) in a CSV file. Parse and process the data to calculate summary statistics, generate a report, and create a plot.
 
 ## Rankings ##
 These stages are friendly suggestions to help new programmers. Skilled students are allowed to complete the project in any order; and they might find better ways to solve the requirements.
