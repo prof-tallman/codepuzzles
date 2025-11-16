@@ -80,7 +80,7 @@ These stages are friendly suggestions. Skilled students may implement in any ord
    $ python scrabble.py
    Enter play: ZEBRA 1 2 A
      --> Score: 32  (double word bonus!)
-   Enter play: Z_EBRA 7 8 D
+   Enter play: Z_BRA 7 8 D
      --> Score: 14  (blank tile!)
    Enter play: ZABRE 2 3 D
      --> Error: invalid word
