@@ -48,7 +48,7 @@ These stages are friendly suggestions. Skilled students may implement in any ord
    QXZ → not found in dictionary → invalid
    ```
 
-3. 🧑‍💼 ***Professional***:
+3. 💼 ***Professional***:
    Compute the base Scrabble score (no board bonuses yet).
    - Write a function that computes the score for a word
    - Use hard-coded tile scores (A=1, B=3, ..., Z=10, _ = 0)
