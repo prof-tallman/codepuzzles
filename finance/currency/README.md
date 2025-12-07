@@ -31,7 +31,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 4. ***1337 H@cker***:
    Read the rates file from an online source and add some real-world details.
    - If the `--rates` flag is omitted, instead of reading from a local file, download the exchange rates from an internet server.
-   - Fees/Spread: support `--fee-pct X` to model a transaction fee (e.g., 2.5%). The new computation will be `net = usd_amount * (1 - X/100)` before conversion.
+   - Fees/Spread: support `--fee-pct X` to model a transaction fee (e.g., 2.5%). The new computation will be `net = usd_amount / (1 - X/100)` before conversion.
    - Batch mode: accept multiple amounts: `EUR 10 25 100` → print one line per amount.
    - Pretty formatting: optional `--precision N` (default 2) and `--symbol` (print currency symbol if known: $, €, £, ¥, otherwise do not use a symbol).
 
