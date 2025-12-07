@@ -10,7 +10,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    Write a function that converts US Dollars to another currency using an exchange rate dictionary.
    - Create a rates dictionary that holds the exchange rate for a 4-5 different currencies. The keys are currency names (abbreviations) and the values are currency rates.
    - Define the dictionary as value per $1.00 USD (e.g., `{"GBP": 1.23, "EUR": 1.05, "YEN": 0.76}`)
-   - In the function, compute `converted = usd_amount * rates[target]`
+   - In the function, compute `converted = usd_amount / rates[target]`
    - Then call the fuction with a hardcoded dollar amounts, new currency types, and the exchange rate dictionary.
    - Print the results.
 
