@@ -1,7 +1,7 @@
 # Caesar Shift Cipher #
 Write a program that encrypts and decrypts text messages using the Caesar Shift Cipher.
 
-The Caesar Shift Cipher is a historic cipher credited to the Roman military. It is considered one of the weaker ciphers to break since there are only 25 possible shift values (e.g., keys). However, the cipher has been used to encrypt military communications all the way up to the American Civil War.
+The Caesar Shift Cipher is a historic cipher credited to the Roman military. Although it presumably worked well for the Romans, it is now considered one of the weakest ciphers to break. There are only 25 possible ways to encrypt a message. An attacker can simply try each of the 25 possibilities until stumbling on the correct solution. Despite these weakensses, the cipher was been used to encrypt military communications all the way up to the American Civil War.
 
 The cipher works by rotating the entire alphabet forward so that each letter is shifted by the same amount. Plaintext letters at the end of the alphabet are wrapped around to ciphertext letters at the beginning of the alphabet. For example, if the shift amount is 5, then letter $A \rightarrow F$, $B \rightarrow G$, $C \rightarrow H$, $X \rightarrow C$, $Y \rightarrow D$, and $Z \rightarrow E$.
 
@@ -12,29 +12,65 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 1. ***AI Does My HW***:  
    Implement a simple Caesar Shift Cipher encryption program.
-   - Write a function that encrypts a text string by shifting each letter by a fixed amount. Return the encrypted string.
+   - Write a function that encrypts a text string by shifting each letter by some fixed amount. Return the encrypted string.
    - Call this function with a hardcoded sample text and key.
    - Compare the function's output to a precomputed test case that is known to be correct. For example, `hello` shifted by 5 would produce `mjqqt`.
-   - Do not inclue any spaces, punctuation, or numbers in the sample text--letters only.
+   - Do not inclue any spaces, punctuation, or numbers in the test case--letters only.
    - Decryption is not required.
+   ```
+   user@computer:~$ python caesar.py
+   hello -> mjqqt
+   ```
 
 2. ***Script Kiddie***: 
    Add a decryption function to the previous Caesar Shift Cipher program.
-   - Decryption is the inverse cipher operation. This can be accomplished quickly with just a few lines of code that repurpose the encryption funciton.
+   - Decryption is the inverse cipher operation.
    - Test the decryption function with the output of the encryption, it should return the original harcoded sample text.
-   - Do not include any spaces, punctuation, or numbers in the sample text--letters only.
+   - Once again, do not include any spaces, punctuation, or numbers in the sample text--letters only.
+   ```
+   user@computer:~$ python caesar.py
+   Encrypt: hello -> mjqqt
+   Decrypt: mjqqt -> hello
+   ```
 
 3. ***Professional***: 
    Turn these simple hardcoded functions into a functional encryption program.
    - Change the program to use command line parameters instead of the hardcoded sample text.
    - The program will need three parameters: the text to encrypt/decrypt, a key (the shift amount), and a flag to choose between encryption and decryption.
-   - Detect common errors and handle them gracefully. For example, what happens if the user passes in text that contains spaces or numbers?
+   - Output ciphertext in all upper-case letters and plaintext in all lower-case letters.
+   - Detect common errors and handle them gracefully. For example, what happens if the user passes in text that contains spaces or numbers? Does your program show an error or simply skip over them? Both options are valid at this point.
+   ```
+   user@computer:~$ python caesar.py --mode encrypt hellothisismytestmessage 5
+   MJQQTYMNXNXRDYJXYRJXXFLJ
+
+   user@computer:~$ python caesar.py --mode decrypt mjqqtymnxnxrdyjxyrjxxflj 5
+   hellothisismytestmessage
+
+   user@computer:~$ python caesar.py --mode encrypt "hello this is my test message" 5
+   Error: text contains numbers, whitespace, or punctuation characters
+
+   user@computer:~$ python caesar.py --mode encrypt "hello this is my test message" 5
+   MJQQTYMNXNXRDYJXYRJXXFLJ   
+   ```
 
 4. ***1337 H@cker***:
-   Create two different modes for the program: simple and secure.
-   - Modify the encryption and decryption functions to process spaces, punctuation, and numbers.
-   - The program should work in two modes: `simple` mode will include all non-alphabetic characters without changing them and `secure` mode will convert the text to uppercase and remove all spaces, punctuations, and numbers.
-   - Add another flag to the command line parameters that will choose between the two modes. 
+   Create two different modes for the program: simple and secure. One that handles spaces, punctuation, and numbers by skipping over them and anotehr mode that removes them from the message.
+   - The program should work in two modes: `simple` mode will include all non-alphabetic characters without changing them and `secure` mode will remove all spaces, punctuations, and numbers.
+   - Add another flag to the command line parameters that will choose between the two modes.
+   ```
+   user@computer:~$ python caesar.py --mode encrypt --option simple "hello this is my message 2 test" 5
+   MJQQT YMNX NX RD RJXXFLJ 2 YJXY
+
+   user@computer:~$ python caesar.py --mode encrypt "hello this is my message 2 test" 5
+   Warning: Simple vs secure option was missing; default mode is simple
+   MJQQT YMNX NX RD RJXXFLJ 2 YJXY
+
+   user@computer:~$ python caesar.py --mode encrypt --option secure "hello this is my message 2 test" 5
+   MJQQTYMNXNXRDRJXXFLJYJXY
+
+   user@computer:~$ python caesar.py --mode decrypt --option simple "MJQQT YMNX NX RD RJXXFLJ 2 YJXY" 5
+   hello this is my message 2 test
+   ```
 
 5. ***BONUS***: 
    Add a brute force option that will demonstrate the weakness of the Caesar Shift Cipher by printing the potential plaintex messages using a ciphertext and every possible shift value, 1-25.
@@ -48,19 +84,6 @@ However, students are prohibited from giving the AI with any information about t
 Additional assumptions and constraints are listed below.
 * Although this cipher can be used for any alphabet-based language, it is reasonable to restrict the input to a single language such as English.
 * Assume that the user will enter mixed-case text. That is, it might include lower-case and upper-case letters.
-
-## Examples ##
-Here are a few sample runs for the final program.
-* Running in simple mode:
-```
-user@computer:~$ python caesar.py encrypt 'Hello world!' 5 simple
-Mjqqt btwqi!
-```
-* Running in secure mode (notice that all letters are converted to upper case):
-```
-user@computer:~$ python caesar.py encrypt 'Hello world!' 5 secure
-MJQQTBTWQI
-```
 
 ## Resources ##
 Additional resources are not required for this project.
