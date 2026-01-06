@@ -56,7 +56,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    - Instead of passing a hardcoded message to each function, read the message from a text file.
    - Start by hardcoding the name of the text file. Then change the program to take a command line argument that contains the name of the text file.
    - Print all of the results.
-   Handle text that includes mixed-case letters, numbers, and punctuation. Remove all of the non-alphabetic characters so that the three functions treat the text as one giant string of letters.
+   Handle text that includes mixed-case letters, numbers, and punctuation. Remove all of the non-alphabetic characters so that the three functions treat the text as one long, unbroken string of letters.
    ```
    user@computer:~$ python ngrams.py
    usage: ngrams3.py [-h] file
@@ -69,7 +69,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    This is the content in my test file.
 
    user@computer:~$ python ngrams.py test.txt
-   Text: thisiscontentinmytestfile
+   Text: thisiscont...mytestfile
    {'a': 0.0, 'b': 0.0, 'c': 4.0, 'd': 0.0, 'e': 12.0, 'f': 4.0, 'g': 0.0, 'h': 4.0,
    'i': 16.0, 'j': 0.0, 'k': 0.0, 'l': 4.0, 'm': 4.0, 'n': 12.0, 'o': 4.0, 'p': 0.0,
    'q': 0.0, 'r': 0.0, 's': 12.0, 't': 20.0, 'u': 0.0, 'v': 0.0, 'w': 0.0, 'x': 0.0,
@@ -85,9 +85,43 @@ These stages are friendly suggestions to help new programmers. Skilled students 
 
 4. ***1337 H@cker***:  
    Combine the three redundant functions into one master function.
-   - Right now the program uses three separate functions to calculate single letter frequencies, digrams, and trigrams.
-   - Analyze these three functions and figure out how to write a single function that will calculate the frequency of any length n-gram.
+   - Write one new function that replaces the functionality of the existing three n-gram functions: single letter frequency, digrams, and trigrams!
    - Pass the desired n-gram length as a parameter to this function.
+   - This new function should work with values larger than `n=3` if users want to see quadgrams, quintgrams, or even more.
+   - Use a command line parameter to allow the user to set the value for `n`.
+   Pretty-up the output into a table format.
+   - By default, print the 10 most common n-grams in a polished table format
+   - If the user passes the `--verbose` command line argument, dump the entire dictionary of results.
+   - Do not worry about distinguishing the order between n-grams with the same frequency score
+   ```
+   user@computer:~$ python ngrams.py test.txt 2
+   Text: thisiscont...mytestfile
+   Top 10 N-Grams
+   ==============
+    1.  is  8.33
+    2.  nt  8.33
+    3.  te  8.33
+    4.  th  4.17
+    5.  hi  4.17
+    6.  si  4.17
+    7.  sc  4.17
+    8.  co  4.17
+    9.  on  4.17
+   10.  en  4.17
+
+   user@computer:~$ python ngrams.py --verbose test.txt 2
+   Text: thisiscont...mytestfile
+   {'th': 4.17, 'hi': 4.17, 'is': 8.33, 'si': 4.17, 'sc': 4.17, 'co': 4.17, 'on': 4.17,
+   'nt': 8.33, 'te': 8.33, 'en': 4.17, 'ti': 4.17, 'in': 4.17, 'nm': 4.17, 'my': 4.17,
+   'yt': 4.17, 'es': 4.17, 'st': 4.17, 'tf': 4.17, 'fi': 4.17, 'il': 4.17, 'le': 4.17}
+
+   user@computer:~$ python ngrams.py --verbose test.txt 3
+   Text: thisiscont...mytestfile
+   {'thi': 4.35, 'his': 4.35, 'isi': 4.35, 'sis': 4.35, 'isc': 4.35, 'sco': 4.35,
+   'con': 4.35, 'ont': 4.35, 'nte': 4.35, 'ten': 4.35, 'ent': 4.35, 'nti': 4.35,
+   'tin': 4.35, 'inm': 4.35, 'nmy': 4.35, 'myt': 4.35, 'yte': 4.35, 'tes': 4.35,
+   'est': 4.35, 'stf': 4.35, 'tfi': 4.35, 'fil': 4.35, 'ile': 4.35}
+   ```   
    
 6. ***BONUS***:  
    Print the output to the console window starting with the most common n-gram and continuing with the full top-10 results in decreasing order. Do not print anything beyond the top-10 reuslts.
@@ -104,17 +138,6 @@ Additional assumptions and constraints are listed below.
 * For single-letter frequencies, include all 26 letters of the alphabet, even if a particular letter is missing. The frequency of a missing letter is `0.0`.
 * For digrams, trigrams, and beyond, only include the n-grams that are included in the message. The n-grams that are missing from the input text should be omitted from the output.
 * Calculate each frequency as a percentage and round to 2 decimal points (e.g., $0.1234 \rightarrow 0.12$)
-
-## Examples ##
-If the input text was "The quick red fox jumped over the lazy dog", then some of the n-gram frequency distributions would be:
-| Letter Frequencies | Digrams | Trigrams |
-|--------------------|---------|----------|
-|`A:2.8`|`th:5.7`|`the:5.9`|
-|`B:0.0`|`he:5.7`|`heq:2.9`|
-|`C:2.8`|`eq:2.9`|`equ:2.9`|
-|`D:8.3`|`qu:2.9`|`qui:2.9`|
-|`E:11.1`|`ui:2.9`|`uic:2.9`|
-|`...`|`...`|`...`|
 
 ## Resources ##
 Additional resources are not necessary to complete this project.
