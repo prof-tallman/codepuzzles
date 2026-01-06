@@ -62,6 +62,9 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    usage: ngrams3.py [-h] file
    ngrams3.py: error: the following arguments are required: file
 
+   user@cmoputer:~$ python ngrams.py dne.txt
+   Error: the file 'dne.txt' does not exist
+
    user@computer:~$ cat test.txt
    This is the content in my test file.
 
@@ -85,8 +88,8 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    - Right now the program uses three separate functions to calculate single letter frequencies, digrams, and trigrams.
    - Analyze these three functions and figure out how to write a single function that will calculate the frequency of any length n-gram.
    - Pass the desired n-gram length as a parameter to this function.
-
-5. ***BONUS***:  
+   
+6. ***BONUS***:  
    Print the output to the console window starting with the most common n-gram and continuing with the full top-10 results in decreasing order. Do not print anything beyond the top-10 reuslts.
 
 ## AI Restrictions ##
