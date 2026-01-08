@@ -51,7 +51,17 @@ However, students are prohibited from giving the AI any information about the as
 ## Examples ##
 Here is a screenshot of a fun interface that some senior computer science students quickly put together. This program goes above and beyond what is expected by completing all of the ***1337 H@cker*** requirements, the ***BONUS*** options, and more. Consider it as inspiration for what can be done with a bit more computer science experience.
 
+This is the controller interface immediately after connecting to the drone:
 
+![Photo of controller interface](control_interface.jpeg)
+
+Here is a screenshot of controller interface while the drone is flying and the live-feed camera is enabled. Note that under some lighting conditions, it's difficult to see read some of the HUD values:
+
+![Photo of controller displaying live camera feed](live_video.jpeg)
+
+Here is a photo from my cell phone showing the the controller software running and the drone flying. Note that the drone is a bit difficult to see:
+
+![External photo of flying drone](external_photo.jpeg)
 
 ## Resources ##
 Most students will be using DJI Tello drones and programming in Python.
