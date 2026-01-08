@@ -55,7 +55,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    - Batch mode: accept multiple amounts: `EUR 10 25 100` → print one line per amount.
    - Pretty formatting: optional `--precision N` (default 2) and `--symbol` to print currency symbol if known, otherwise do not use a symbol (e.g.: $, €, £, ¥).
    ```
-   user@computer:~$ python currency.py eur 100 250 --fee-pct 2.5
+   user@computer:~$ python currency.py --fee-pct 2.5 eur 100 250
    Source: https://raw.githubusercontent.com/prof-tallman/codepuzzles/refs/heads/main/finance/currency/rates.txt
    Rate used is 0.85 GBP per USD
    100.00 USD ->  82.87 EUR  (2.5% fee)
