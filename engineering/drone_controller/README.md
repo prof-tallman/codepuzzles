@@ -18,7 +18,7 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    Add new controller keys to provide movement and rotation along all possible flight axis.
    - Typically movement relies on keyboard buttons that are arranged like the arrow keys (left, right, up, down); for example, `ADWS` or `JLIK`.
    - Most drones allow eight different movements, requiring two sets of keyboard buttons. The movements are typically forward, backward, left, right, up, down, rotate clockwise and rotate counter-clockwise.
-   - Use a keyboard input function that responds to every keystroke immediately (as opposed to the input functions that are completed by pressing the <ENTER> button).
+   - Use a keyboard input function that responds to every keystroke immediately. This is in contrast to standard input functions that are completed by pressing the <ENTER> button (e.g., C#'s `Console.ReadLine()` or Python's `input()`.
    In addition to submitting the source code, demonstrate a successful flight for the instructor. 
 
 3. ***Professional***:  
@@ -50,6 +50,8 @@ However, students are prohibited from giving the AI any information about the as
 
 ## Examples ##
 Here is a screenshot of a fun interface that some senior computer science students quickly put together. This program goes above and beyond what is expected by completing all of the ***1337 H@cker*** requirements, the ***BONUS*** options, and more. Consider it as inspiration for what can be done with a bit more computer science experience.
+
+
 
 ## Resources ##
 Most students will be using DJI Tello drones and programming in Python.
