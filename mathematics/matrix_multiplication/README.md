@@ -108,8 +108,8 @@ These stages are friendly suggestions to help new programmers. Skilled students 
    8 10 12.5
    
    user@computer:~$ python matrix.py matrix1.txt matrix3.txt --transpose
-         58.000         65.500
-        139.000        157.000
+         58.000         64.600
+        139.000        155.200
    ```
 
 5. ***BONUS***:  
