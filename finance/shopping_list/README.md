@@ -96,8 +96,8 @@ Items:
 
 Tax rate: 5.25%
 Subtotal:    $165.47
-Tax:           $8.27
-Total:       $173.74
+Tax:           $8.14
+Total:       $173.61
 ```
 
 ## Resources ##
