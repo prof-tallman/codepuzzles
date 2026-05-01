@@ -88,7 +88,7 @@ ATCG
 
 user@computer:~$ python revcomp.py "AGTAGTCGTTGTTGTCA" --gc
 TGACAACAACGACTACT
-GC% = 44.444
+GC% = 41.176
 
 user@computer:~$ python revcomp.py "AGTA" --rna
 UACU
