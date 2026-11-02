@@ -81,7 +81,7 @@ These stages are friendly suggestions. Skilled students may implement in any ord
    Enter play: ZEBRA 1 2 A
      --> Score: 32  (double word bonus!)
    Enter play: Z_BRA 7 8 D
-     --> Score: 14  (blank tile!)
+     --> Score: 15  (blank tile!)
    Enter play: ZABRE 2 3 D
      --> Error: invalid word
    Enter play: ZEBRA 14 3 A
